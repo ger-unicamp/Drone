@@ -14,7 +14,8 @@
 #define LIMITE      110
 
 Servo motores[QUANT_MOTOR];            // Cria um vetor de objetos servo, com tamanho QUANT_MOTOR 
-int pinosPwm[] = {3, 5, 6, 9, 10, 11};                 // Vetor com os pinos que possuem funçao pwm
+int pinosPwm[] = {
+  3, 5, 6, 9, 10, 11};                 // Vetor com os pinos que possuem funçao pwm
 
 int val;
 
@@ -54,10 +55,10 @@ void loop(){
     }
     delay(1000);
     val -= 1;				//Delisga os motores devagar
-  if(val < 80)
-    val = 0;
+    if(val < 80)
+      val = 0;
   }
-  
+
   //Desliga:
   while(1){
     for(int i=0; i<QUANT_MOTOR; i++){
