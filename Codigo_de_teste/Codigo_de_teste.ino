@@ -13,9 +13,8 @@
 #define PASSO         5
 #define LIMITE      110
 
-Servo motores[QUANT_MOTOR];            // Cria um vetor de objetos servo, com tamanho QUANT_MOTOR 
-int pinosPwm[] = {
-  3, 5, 6, 9, 10, 11};                 // Vetor com os pinos que possuem funçao pwm
+Servo motores[QUANT_MOTOR];               // Cria um vetor de objetos servo, com tamanho QUANT_MOTOR 
+int pinosPwm[] = {3, 5, 6, 9, 10, 11};    // Vetor com os pinos que possuem funçao pwm
 
 int val;
 
@@ -31,6 +30,7 @@ void setup(){
 
   for(int i=0; i<QUANT_MOTOR; i++)
     motores[i].write(RODA);		//Começa a rodar os motores
+
   val = RODA;
 } 
 
