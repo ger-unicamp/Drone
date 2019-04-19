@@ -1,7 +1,7 @@
 #include <Servo.h>
-#include <MPU6050_tockn.h>
+#include <MPU6050_tockn.h>  //https://github.com/tockn/MPU6050_tockn
 #include <Wire.h>
-#include <PID_v1.h>
+#include <PID_v1.h>         //https://github.com/br3ttb/Arduino-PID-Library
 
 #define LIGA      17  //Mínimo necessário para ligar os ESCS
 #define RODA      31  //Mínimo necessário para os motores começarem a rodar    
