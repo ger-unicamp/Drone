@@ -16,6 +16,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="NovoDrone.ino" />
+    <None Include="4SetupLoop.ino" />
+    <None Include="3Funcoes.ino" />
+    <None Include="2Variaveis.ino" />
+    <None Include="1Classe.ino" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="__vm\.NovoDrone.vsarduino.h">
