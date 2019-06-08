@@ -2,6 +2,7 @@
 #include <MPU6050_tockn.h>
 #include <Wire.h>
 #include <PID_v1.h>
+#include <SoftwareSerial.h>
 
 #define LIGA      17  //Mínimo necessário para ligar os ESCS
 #define RODA      31  //Mínimo necessário para os motores começarem a rodar    
@@ -12,6 +13,7 @@
 #define KP 1
 #define KI 0
 #define KD 0
+#define serial 1 //1 = bluetooth, 0 = serial
 
 int pinosPwm[] = {3, 5, 6, 9, 10, 11};
 MPU6050 mpu6050(Wire);
@@ -24,18 +26,75 @@ double pitch = 0;
 double roll = 0;
 double yaw = 0;
 
+SoftwareSerial bluetooth(12,13); //Serial para o bluetooth - (RX,TX)
+
 PID PIDteste(&pitch, &output, &setpoint, KP, KI, KD, DIRECT);
 
+void print(char texto[100])
+{
+  if(serial == 1)
+  {
+    bluetooth.print(texto);
+  }
+  else if (serial == 0)
+  {
+    Serial.print(texto);
+  }
+}
 
+void println(char texto[100])
+{
+  if(serial == 1)
+  {
+    bluetooth.println(texto);
+  }
+  else if (serial == 0)
+  {
+    Serial.println(texto);
+  }
+}
+
+
+void print(float num)
+{
+  if(serial == 1)
+  {
+    bluetooth.print(num);
+  }
+  else if (serial == 0)
+  {
+    Serial.print(num);
+  }
+}
+
+void println(float num)
+{
+  if(serial == 1)
+  {
+    bluetooth.println(num);
+  }
+  else if (serial == 0)
+  {
+    Serial.println(num);
+  }
+}
 
 void setup() {
 
   delay(100);
 
-  Serial.begin(115200);
+  if(serial == 1)
+  {
+    bluetooth.begin(9600);
+  }
+  else if(serial == 0)
+  {
+    Serial.begin(115200);  
+  }
+  
 
   //Inicia os Motores
-  Serial.println("Attach");
+  println("Attach");
   for (int i = 0; i < QUANT_MOTOR; i++)
     motores[i].attach(pinosPwm[i]); // Anexa os motores com os pinos pwm. ATENÇAO: OS PINOS ESTAO EM ORDEM CRESCENTE
   delay(10);
@@ -53,12 +112,12 @@ void setup() {
 
 
 
-  Serial.println("Liga os ESCs");
+  println("Liga os ESCs");
   rodaMotores(LIGA);
   delay(2000); // Tempo entre ligar o ESC e começar a usar.
 
 
-  Serial.println("Comeca a rodar os motores");
+  println("Comeca a rodar os motores");
   rodaMotores(RODA);
   delay(2000); //DEixa os moteres começarem a rodar
 
@@ -74,14 +133,14 @@ void loop() {
 
   ImprimirSensor();
 
-  Serial.print(" Outout = ");
-  Serial.print(output);
+  print(" Outout = ");
+  print(output);
 
-  motores[0].write((VOO + output)*1); Serial.print(" Motor 1 (Dir) = "); Serial.print(VOO + output);
-  motores[1].write((VOO - output)*1); Serial.print(" Motor 2 (Esq) = "); Serial.print(VOO - output);
-  motores[2].write((VOO - output)*1); Serial.print(" Motor 3 (Esq) = "); Serial.print(VOO - output);
-  motores[3].write((VOO + output)*1); Serial.print(" Motor 4 (Dir) = "); Serial.print(VOO + output);
-  Serial.println(".");
+  motores[0].write((VOO + output)*1); print(" Motor 1 (Dir) = "); print(VOO + output);
+  motores[1].write((VOO - output)*1); print(" Motor 2 (Esq) = "); print(VOO - output);
+  motores[2].write((VOO - output)*1); print(" Motor 3 (Esq) = "); print(VOO - output);
+  motores[3].write((VOO + output)*1); print(" Motor 4 (Dir) = "); print(VOO + output);
+  println(".");
 
   if (millis() > 25000)
     desligar();
@@ -91,7 +150,7 @@ void desligar() {
 
   int velocidade = RODA;
 
-  Serial.println("Desligando");
+  println("Desligando");
 
   while (velocidade >= 0) {
     velocidade -= 5;
@@ -110,12 +169,12 @@ void rodaMotores(int velocidade) {
 }
 
 void ImprimirSensor() {
-  Serial.print("Pitch = ");
-  Serial.print(pitch);
-  Serial.print(" Roll = ");
-  Serial.print(roll);
-  Serial.print(" Yaw = ");
-  Serial.print(yaw);
+  print("Pitch = ");
+  print(pitch);
+  print(" Roll = ");
+  print(roll);
+  print(" Yaw = ");
+  print(yaw);
 
   outputSomado = output+VOO;
   if(     outputSomado <  60) outputSomado =  60;
