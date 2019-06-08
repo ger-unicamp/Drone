@@ -14,6 +14,8 @@
 #define KI 0
 #define KD 0
 #define serial 1 //1 = bluetooth, 0 = serial
+#define imprimeSensor 1
+#define imprimeMotor 0
 
 int pinosPwm[] = {3, 5, 6, 9, 10, 11};
 MPU6050 mpu6050(Wire);
@@ -131,19 +133,50 @@ void loop() {
 
   PIDteste.Compute();
 
-  ImprimirSensor();
-
-  print(" Outout = ");
-  print(output);
-
-  motores[0].write((VOO + output)*1); print(" Motor 1 (Dir) = "); print(VOO + output);
-  motores[1].write((VOO - output)*1); print(" Motor 2 (Esq) = "); print(VOO - output);
-  motores[2].write((VOO - output)*1); print(" Motor 3 (Esq) = "); print(VOO - output);
-  motores[3].write((VOO + output)*1); print(" Motor 4 (Dir) = "); print(VOO + output);
-  println(".");
+  motores[0].write((VOO + output)*1); 
+  motores[1].write((VOO - output)*1); 
+  motores[2].write((VOO - output)*1); 
+  motores[3].write((VOO + output)*1);
 
   if (millis() > 25000)
     desligar();
+
+  enviaLog();
+}
+
+void enviaLog()
+{
+  print("Output= ");
+  print(output);
+  print(" ");
+  if(imprimeMotor == 1)
+  {
+    print("Motor1(Dir)= "); 
+    print(VOO + output);
+    print(" ");
+    print("Motor2(Esq)= "); 
+    print(VOO - output);
+    print(" ");
+    print("Motor3(Esq)= "); 
+    print(VOO - output);
+    print(" ");
+    print("Motor4(Dir)= "); 
+    print(VOO + output);
+    print(" ");  
+  }
+  if(imprimeSensor == 1)
+  {
+    print("Pitch= ");
+    print(pitch);
+    print(" ");
+    print("Roll= ");
+    print(roll);
+    print(" ");
+    print("Yaw= ");
+    print(yaw);
+    print(" ");
+  }
+  println();
 }
 
 void desligar() {
