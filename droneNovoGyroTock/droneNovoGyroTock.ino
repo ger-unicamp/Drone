@@ -81,6 +81,18 @@ void println(float num)
   }
 }
 
+void println()
+{
+   if(serial == 1)
+  {
+    bluetooth.println();
+  }
+  else if (serial == 0)
+  {
+    Serial.println();
+  }
+}
+
 void setup() {
 
   delay(100);
