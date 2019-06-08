@@ -17,6 +17,26 @@
 #define imprimeSensor 1
 #define imprimeMotor 0
 
+class Voltimetro
+{
+  public:
+    Voltimetro(int porta)
+    {
+      this->porta = byte(porta);
+    }
+
+    int leitura()
+    {
+      tensao = float(analogRead(porta)) /67.2727 ;
+
+      return tensao;
+    }
+    
+  protected:
+    byte porta;
+    float tensao;
+};
+
 int pinosPwm[] = {3, 5, 6, 9, 10, 11};
 MPU6050 mpu6050(Wire);
 Servo motores[QUANT_MOTOR];
@@ -29,8 +49,8 @@ double roll = 0;
 double yaw = 0;
 
 SoftwareSerial bluetooth(12,13); //Serial para o bluetooth - (RX,TX)
-
 PID PIDteste(&pitch, &output, &setpoint, KP, KI, KD, DIRECT);
+Voltimetro voltimetro(0);
 
 void print(char texto[100])
 {
@@ -93,6 +113,11 @@ void println()
   }
 }
 
+void pouso()
+{
+  desligar();
+}
+
 void setup() {
 
   delay(100);
@@ -137,8 +162,12 @@ void setup() {
 
 }
 
-void loop() {
-
+void loop() 
+{
+  if(voltimetro.leitura() < 10)
+  {
+    pouso(); 
+  }
   timer = millis();
 
   calculaAng();
@@ -161,6 +190,9 @@ void enviaLog()
   print("Output= ");
   print(output);
   print(" ");
+  print("Tensao= ");
+  print(voltimetro.leitura());
+  
   if(imprimeMotor == 1)
   {
     print("Motor1(Dir)= "); 
