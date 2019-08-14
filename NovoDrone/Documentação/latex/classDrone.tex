@@ -1,0 +1,263 @@
+\hypertarget{classDrone}{}\doxysection{Drone}
+\label{classDrone}\index{Drone@{Drone}}
+
+
+Implementa o controle de um drone.  
+
+
+\doxysubsection*{Membros p√∫blicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDrone_af8f61b33487d7ae79564f1c3d0b6aca7_af8f61b33487d7ae79564f1c3d0b6aca7}{Drone}} ()
+\item 
+void \mbox{\hyperlink{classDrone_a0ee43fed874d2aa1794f401992cac3eb_a0ee43fed874d2aa1794f401992cac3eb}{atualiza}} ()
+\begin{DoxyCompactList}\small\item\em Atualiza os dados do drone e o matÈm na posiÁ„o desejada. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDrone_a3556be36801c60536b9f44128e3968dd_a3556be36801c60536b9f44128e3968dd}{desligar}} ()
+\begin{DoxyCompactList}\small\item\em Desliga os motores. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDrone_aa8b0f9b65bba4968b1d69da6af37ac2c_aa8b0f9b65bba4968b1d69da6af37ac2c}{ir\+Para}} (float angulo)
+\begin{DoxyCompactList}\small\item\em Define o ‚ngulo para o eixo pitch. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDrone_aa64df8a8b7d0e3fee175ce46e0a620c9_aa64df8a8b7d0e3fee175ce46e0a620c9}{ligar}} ()
+\begin{DoxyCompactList}\small\item\em Liga os motores do drone. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDrone_a779e2fbd30714b30ea03259cc1b36705_a779e2fbd30714b30ea03259cc1b36705}{pousar}} ()
+\begin{DoxyCompactList}\small\item\em Pousa o drone. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDrone_a13077939859b798bd51c039e4dab2413_a13077939859b798bd51c039e4dab2413}{set\+Motor}} (int indice, int porta)
+\begin{DoxyCompactList}\small\item\em Define a porta do motor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Membros protegidos}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classDrone_aad84bcdd70945970989a5fa6167fd996_aad84bcdd70945970989a5fa6167fd996}{atualiza\+Entradas}} ()
+\begin{DoxyCompactList}\small\item\em Objeto para leitura da tens„o da bateria \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDrone_a8281ec41246b20fb24359cef80b61a7e_a8281ec41246b20fb24359cef80b61a7e}{atualiza\+Motor}} ()
+\begin{DoxyCompactList}\small\item\em Define as novas velocidades dos motores. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDrone_a4eec6f548481745f43f9aae0dc9ea661_a4eec6f548481745f43f9aae0dc9ea661}{atualiza\+P\+ID}} ()
+\begin{DoxyCompactList}\small\item\em Atualiza os P\+I\+Ds. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDrone_a1b534bc702a097e3544b991e2bacfc38_a1b534bc702a097e3544b991e2bacfc38}{leitura}} ()
+\begin{DoxyCompactList}\small\item\em Efetua as leituras dos sensores. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Protegidos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classControleSerial}{Controle\+Serial}} \mbox{\hyperlink{classDrone_a811ce49fa71a05561f78de363f94e205_a811ce49fa71a05561f78de363f94e205}{controle}}
+\begin{DoxyCompactList}\small\item\em Objeto para log do drone. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classInercial}{Inercial}} \mbox{\hyperlink{classDrone_a7f4b39e6208c40307f8faec7a3d55c1e_a7f4b39e6208c40307f8faec7a3d55c1e}{inercial}}
+\begin{DoxyCompactList}\small\item\em Vari·veis do P\+ID para controle do eixo pitch \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMotor}{Motor}} \mbox{\hyperlink{classDrone_a3df0381d111008d42094d62b67345411_a3df0381d111008d42094d62b67345411}{motor}} \mbox{[}4\mbox{]}
+\begin{DoxyCompactList}\small\item\em P\+ID para controle da inclinaÁ„o no eixo pitch. \end{DoxyCompactList}\item 
+P\+ID \mbox{\hyperlink{classDrone_ae0484d7820c4f676db1d4cb9d4a0b1e5_ae0484d7820c4f676db1d4cb9d4a0b1e5}{pid\+Pitch}}
+\begin{DoxyCompactList}\small\item\em Objeto para controle da I\+MU. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classRegistro}{Registro}} \mbox{\hyperlink{classDrone_a37e0d1480564fb12da4e8951b7f44f6d_a37e0d1480564fb12da4e8951b7f44f6d}{registro}}
+\begin{DoxyCompactList}\small\item\em Objetos para controle dos motores. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structVariaveisPID}{Variaveis\+P\+ID}} \mbox{\hyperlink{classDrone_aa469eedc232351a3761b07cf8a75794c_aa469eedc232351a3761b07cf8a75794c}{var\+P\+I\+D\+Pitch}}
+\item 
+\mbox{\hyperlink{classVoltimetro}{Voltimetro}} \mbox{\hyperlink{classDrone_a0461c72d67cc892a91eabb0c5a909793_a0461c72d67cc892a91eabb0c5a909793}{voltimetro}}
+\begin{DoxyCompactList}\small\item\em Objeto para controle da comunicaÁ„o do drone. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descri√ß√£o detalhada}
+Implementa o controle de um drone. 
+
+Elton, 14/08/2019. 
+
+\doxysubsection{Documenta√ß√£o dos Construtores \& Destrutor}
+\mbox{\Hypertarget{classDrone_af8f61b33487d7ae79564f1c3d0b6aca7_af8f61b33487d7ae79564f1c3d0b6aca7}\label{classDrone_af8f61b33487d7ae79564f1c3d0b6aca7_af8f61b33487d7ae79564f1c3d0b6aca7}} 
+\index{Drone@{Drone}!Drone@{Drone}}
+\index{Drone@{Drone}!Drone@{Drone}}
+\doxysubsubsection{\texorpdfstring{Drone()}{Drone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDrone}{Drone}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Documenta√ß√£o dos m√©todos}
+\mbox{\Hypertarget{classDrone_a0ee43fed874d2aa1794f401992cac3eb_a0ee43fed874d2aa1794f401992cac3eb}\label{classDrone_a0ee43fed874d2aa1794f401992cac3eb_a0ee43fed874d2aa1794f401992cac3eb}} 
+\index{Drone@{Drone}!atualiza@{atualiza}}
+\index{atualiza@{atualiza}!Drone@{Drone}}
+\doxysubsubsection{\texorpdfstring{atualiza()}{atualiza()}}
+{\footnotesize\ttfamily void atualiza (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Atualiza os dados do drone e o matÈm na posiÁ„o desejada. 
+
+Elton, 14/08/2019. \mbox{\Hypertarget{classDrone_aad84bcdd70945970989a5fa6167fd996_aad84bcdd70945970989a5fa6167fd996}\label{classDrone_aad84bcdd70945970989a5fa6167fd996_aad84bcdd70945970989a5fa6167fd996}} 
+\index{Drone@{Drone}!atualizaEntradas@{atualizaEntradas}}
+\index{atualizaEntradas@{atualizaEntradas}!Drone@{Drone}}
+\doxysubsubsection{\texorpdfstring{atualizaEntradas()}{atualizaEntradas()}}
+{\footnotesize\ttfamily void atualiza\+Entradas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Objeto para leitura da tens„o da bateria 
+
+Atualiza entradas dos P\+I\+Ds. 
+
+Elton, 14/08/2019. \mbox{\Hypertarget{classDrone_a8281ec41246b20fb24359cef80b61a7e_a8281ec41246b20fb24359cef80b61a7e}\label{classDrone_a8281ec41246b20fb24359cef80b61a7e_a8281ec41246b20fb24359cef80b61a7e}} 
+\index{Drone@{Drone}!atualizaMotor@{atualizaMotor}}
+\index{atualizaMotor@{atualizaMotor}!Drone@{Drone}}
+\doxysubsubsection{\texorpdfstring{atualizaMotor()}{atualizaMotor()}}
+{\footnotesize\ttfamily void atualiza\+Motor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Define as novas velocidades dos motores. 
+
+Elton, 14/08/2019. \mbox{\Hypertarget{classDrone_a4eec6f548481745f43f9aae0dc9ea661_a4eec6f548481745f43f9aae0dc9ea661}\label{classDrone_a4eec6f548481745f43f9aae0dc9ea661_a4eec6f548481745f43f9aae0dc9ea661}} 
+\index{Drone@{Drone}!atualizaPID@{atualizaPID}}
+\index{atualizaPID@{atualizaPID}!Drone@{Drone}}
+\doxysubsubsection{\texorpdfstring{atualizaPID()}{atualizaPID()}}
+{\footnotesize\ttfamily void atualiza\+P\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Atualiza os P\+I\+Ds. 
+
+Elton, 14/08/2019. \mbox{\Hypertarget{classDrone_a3556be36801c60536b9f44128e3968dd_a3556be36801c60536b9f44128e3968dd}\label{classDrone_a3556be36801c60536b9f44128e3968dd_a3556be36801c60536b9f44128e3968dd}} 
+\index{Drone@{Drone}!desligar@{desligar}}
+\index{desligar@{desligar}!Drone@{Drone}}
+\doxysubsubsection{\texorpdfstring{desligar()}{desligar()}}
+{\footnotesize\ttfamily void desligar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Desliga os motores. 
+
+Elton, 14/08/2019. \mbox{\Hypertarget{classDrone_aa8b0f9b65bba4968b1d69da6af37ac2c_aa8b0f9b65bba4968b1d69da6af37ac2c}\label{classDrone_aa8b0f9b65bba4968b1d69da6af37ac2c_aa8b0f9b65bba4968b1d69da6af37ac2c}} 
+\index{Drone@{Drone}!irPara@{irPara}}
+\index{irPara@{irPara}!Drone@{Drone}}
+\doxysubsubsection{\texorpdfstring{irPara()}{irPara()}}
+{\footnotesize\ttfamily void ir\+Para (\begin{DoxyParamCaption}\item[{float}]{angulo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Define o ‚ngulo para o eixo pitch. 
+
+Elton, 14/08/2019. 
+
+
+\begin{DoxyParams}{Par√¢metros}
+{\em angulo} & O ‚ngulo desejado em \mbox{[}∫\mbox{]}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDrone_a1b534bc702a097e3544b991e2bacfc38_a1b534bc702a097e3544b991e2bacfc38}\label{classDrone_a1b534bc702a097e3544b991e2bacfc38_a1b534bc702a097e3544b991e2bacfc38}} 
+\index{Drone@{Drone}!leitura@{leitura}}
+\index{leitura@{leitura}!Drone@{Drone}}
+\doxysubsubsection{\texorpdfstring{leitura()}{leitura()}}
+{\footnotesize\ttfamily void leitura (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Efetua as leituras dos sensores. 
+
+Elton, 14/08/2019. \mbox{\Hypertarget{classDrone_aa64df8a8b7d0e3fee175ce46e0a620c9_aa64df8a8b7d0e3fee175ce46e0a620c9}\label{classDrone_aa64df8a8b7d0e3fee175ce46e0a620c9_aa64df8a8b7d0e3fee175ce46e0a620c9}} 
+\index{Drone@{Drone}!ligar@{ligar}}
+\index{ligar@{ligar}!Drone@{Drone}}
+\doxysubsubsection{\texorpdfstring{ligar()}{ligar()}}
+{\footnotesize\ttfamily void ligar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Liga os motores do drone. 
+
+Elton, 14/08/2019.\mbox{\Hypertarget{classDrone_a779e2fbd30714b30ea03259cc1b36705_a779e2fbd30714b30ea03259cc1b36705}\label{classDrone_a779e2fbd30714b30ea03259cc1b36705_a779e2fbd30714b30ea03259cc1b36705}} 
+\index{Drone@{Drone}!pousar@{pousar}}
+\index{pousar@{pousar}!Drone@{Drone}}
+\doxysubsubsection{\texorpdfstring{pousar()}{pousar()}}
+{\footnotesize\ttfamily void pousar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Pousa o drone. 
+
+N√O I\+M\+P\+L\+E\+M\+E\+N\+T\+A\+DO. 
+
+Elton, 14/08/2019. \mbox{\Hypertarget{classDrone_a13077939859b798bd51c039e4dab2413_a13077939859b798bd51c039e4dab2413}\label{classDrone_a13077939859b798bd51c039e4dab2413_a13077939859b798bd51c039e4dab2413}} 
+\index{Drone@{Drone}!setMotor@{setMotor}}
+\index{setMotor@{setMotor}!Drone@{Drone}}
+\doxysubsubsection{\texorpdfstring{setMotor()}{setMotor()}}
+{\footnotesize\ttfamily void set\+Motor (\begin{DoxyParamCaption}\item[{int}]{indice,  }\item[{int}]{porta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Define a porta do motor. 
+
+Elton, 14/08/2019. 
+
+
+\begin{DoxyParams}{Par√¢metros}
+{\em indice} & Õndice do motor a ser definido. \\
+\hline
+{\em porta} & Porta desejada. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documenta√ß√£o dos dados membro}
+\mbox{\Hypertarget{classDrone_a811ce49fa71a05561f78de363f94e205_a811ce49fa71a05561f78de363f94e205}\label{classDrone_a811ce49fa71a05561f78de363f94e205_a811ce49fa71a05561f78de363f94e205}} 
+\index{Drone@{Drone}!controle@{controle}}
+\index{controle@{controle}!Drone@{Drone}}
+\doxysubsubsection{\texorpdfstring{controle}{controle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classControleSerial}{Controle\+Serial}} controle\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Objeto para log do drone. 
+
+\mbox{\Hypertarget{classDrone_a7f4b39e6208c40307f8faec7a3d55c1e_a7f4b39e6208c40307f8faec7a3d55c1e}\label{classDrone_a7f4b39e6208c40307f8faec7a3d55c1e_a7f4b39e6208c40307f8faec7a3d55c1e}} 
+\index{Drone@{Drone}!inercial@{inercial}}
+\index{inercial@{inercial}!Drone@{Drone}}
+\doxysubsubsection{\texorpdfstring{inercial}{inercial}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classInercial}{Inercial}} inercial\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Vari·veis do P\+ID para controle do eixo pitch 
+
+\mbox{\Hypertarget{classDrone_a3df0381d111008d42094d62b67345411_a3df0381d111008d42094d62b67345411}\label{classDrone_a3df0381d111008d42094d62b67345411_a3df0381d111008d42094d62b67345411}} 
+\index{Drone@{Drone}!motor@{motor}}
+\index{motor@{motor}!Drone@{Drone}}
+\doxysubsubsection{\texorpdfstring{motor}{motor}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMotor}{Motor}} motor\mbox{[}4\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+P\+ID para controle da inclinaÁ„o no eixo pitch. 
+
+\mbox{\Hypertarget{classDrone_ae0484d7820c4f676db1d4cb9d4a0b1e5_ae0484d7820c4f676db1d4cb9d4a0b1e5}\label{classDrone_ae0484d7820c4f676db1d4cb9d4a0b1e5_ae0484d7820c4f676db1d4cb9d4a0b1e5}} 
+\index{Drone@{Drone}!pidPitch@{pidPitch}}
+\index{pidPitch@{pidPitch}!Drone@{Drone}}
+\doxysubsubsection{\texorpdfstring{pidPitch}{pidPitch}}
+{\footnotesize\ttfamily P\+ID pid\+Pitch\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Objeto para controle da I\+MU. 
+
+\mbox{\Hypertarget{classDrone_a37e0d1480564fb12da4e8951b7f44f6d_a37e0d1480564fb12da4e8951b7f44f6d}\label{classDrone_a37e0d1480564fb12da4e8951b7f44f6d_a37e0d1480564fb12da4e8951b7f44f6d}} 
+\index{Drone@{Drone}!registro@{registro}}
+\index{registro@{registro}!Drone@{Drone}}
+\doxysubsubsection{\texorpdfstring{registro}{registro}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRegistro}{Registro}} registro\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Objetos para controle dos motores. 
+
+\mbox{\Hypertarget{classDrone_aa469eedc232351a3761b07cf8a75794c_aa469eedc232351a3761b07cf8a75794c}\label{classDrone_aa469eedc232351a3761b07cf8a75794c_aa469eedc232351a3761b07cf8a75794c}} 
+\index{Drone@{Drone}!varPIDPitch@{varPIDPitch}}
+\index{varPIDPitch@{varPIDPitch}!Drone@{Drone}}
+\doxysubsubsection{\texorpdfstring{varPIDPitch}{varPIDPitch}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structVariaveisPID}{Variaveis\+P\+ID}} var\+P\+I\+D\+Pitch\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classDrone_a0461c72d67cc892a91eabb0c5a909793_a0461c72d67cc892a91eabb0c5a909793}\label{classDrone_a0461c72d67cc892a91eabb0c5a909793_a0461c72d67cc892a91eabb0c5a909793}} 
+\index{Drone@{Drone}!voltimetro@{voltimetro}}
+\index{voltimetro@{voltimetro}!Drone@{Drone}}
+\doxysubsubsection{\texorpdfstring{voltimetro}{voltimetro}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVoltimetro}{Voltimetro}} voltimetro\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Objeto para controle da comunicaÁ„o do drone. 
+
+
+
+A documenta√ß√£o para esta classe foi gerada a partir do seguinte ficheiro\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Elton/source/\+Repos/ger-\/unicamp/\+Drone/\+Novo\+Drone/\+Novo\+Drone/\mbox{\hyperlink{1Classe_8ino}{1\+Classe.\+ino}}\end{DoxyCompactItemize}

@@ -1,0 +1,323 @@
+\hypertarget{classRegistro}{}\doxysection{Registro}
+\label{classRegistro}\index{Registro@{Registro}}
+
+
+Implementa um registro/log para dados do drone.  
+
+
+\doxysubsection*{Membros pÃºblicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRegistro_af8a2db6253c4bbfa8d56abb8625a7397_af8a2db6253c4bbfa8d56abb8625a7397}{Registro}} (\mbox{\hyperlink{classControleSerial}{Controle\+Serial}} $\ast$\mbox{\hyperlink{classRegistro_aaf9bdf836274d2d9acab3d4dca1b81d8_aaf9bdf836274d2d9acab3d4dca1b81d8}{controle}})
+\begin{DoxyCompactList}\small\item\em Construtor da Classe \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRegistro_a388f572c62279f839ee138a9afbdeeb5_a388f572c62279f839ee138a9afbdeeb5}{print}} ()
+\begin{DoxyCompactList}\small\item\em Imprime os valores desejados na porta serial. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRegistro_a150321614d788f8b0ce1d27bd583e944_a150321614d788f8b0ce1d27bd583e944}{set\+Angulo}} (float $\ast$\mbox{\hyperlink{classRegistro_a813d79a6be84028a25ee3abbb605e1bd_a813d79a6be84028a25ee3abbb605e1bd}{roll}}, float $\ast$\mbox{\hyperlink{classRegistro_ad679087d88e267f46aa86414c0e1131e_ad679087d88e267f46aa86414c0e1131e}{pitch}}, float $\ast$\mbox{\hyperlink{classRegistro_a87c8b58c65cfb33ef421abdb7bff2925_a87c8b58c65cfb33ef421abdb7bff2925}{yaw}})
+\begin{DoxyCompactList}\small\item\em Define os endereços para as posições ângulares do robô. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRegistro_a85cca12cf4985a9b22835e24a9ad6756_a85cca12cf4985a9b22835e24a9ad6756}{set\+Tensao}} (float $\ast$\mbox{\hyperlink{classRegistro_ac1a903efb8ae64bcd8982bf29554b0ea_ac1a903efb8ae64bcd8982bf29554b0ea}{tensao}})
+\begin{DoxyCompactList}\small\item\em Define o endereço para o valor de tensão. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRegistro_afcb4cc9f2cb3643c79b81289de9fef64_afcb4cc9f2cb3643c79b81289de9fef64}{set\+Velocidade}} (float $\ast$\mbox{\hyperlink{classRegistro_a00eebbd3696386785de8b82989e4d0c9_a00eebbd3696386785de8b82989e4d0c9}{vel0}}, float $\ast$\mbox{\hyperlink{classRegistro_a225ad99ae1066ea77b6367749229072b_a225ad99ae1066ea77b6367749229072b}{vel1}}, float $\ast$\mbox{\hyperlink{classRegistro_a31c24502030747178331214a52f51279_a31c24502030747178331214a52f51279}{vel2}}, float $\ast$\mbox{\hyperlink{classRegistro_a33b4c089f632f389093f71960dbf3bd3_a33b4c089f632f389093f71960dbf3bd3}{vel3}})
+\begin{DoxyCompactList}\small\item\em Define os endereços para as velocidades dos motores do robô. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Membros protegidos}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classRegistro_aeffc3e68bfbea65f427cffb9d8d38594_aeffc3e68bfbea65f427cffb9d8d38594}{print\+Angulo}} ()
+\begin{DoxyCompactList}\small\item\em True = Deve imprimir os dados dos controladores P\+ID. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRegistro_a71fd5ce49c52375d635eaf2b3beb4a0b_a71fd5ce49c52375d635eaf2b3beb4a0b}{print\+P\+ID}} ()
+\begin{DoxyCompactList}\small\item\em Imprime as inclinações. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRegistro_a6adb0c65b074da301bfe522eaf0ebc96_a6adb0c65b074da301bfe522eaf0ebc96}{print\+Tensao}} ()
+\begin{DoxyCompactList}\small\item\em Imprime a tensão. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRegistro_a5124414eff0f3f499479f1efed8e351c_a5124414eff0f3f499479f1efed8e351c}{print\+Velocidade}} ()
+\begin{DoxyCompactList}\small\item\em Imprime as velocidades dos motores. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Protegidos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classControleSerial}{Controle\+Serial}} $\ast$ \mbox{\hyperlink{classRegistro_aaf9bdf836274d2d9acab3d4dca1b81d8_aaf9bdf836274d2d9acab3d4dca1b81d8}{controle}}
+\item 
+bool \mbox{\hyperlink{classRegistro_a0693df9ca610ea588f4969db147497aa_a0693df9ca610ea588f4969db147497aa}{imprime\+Angulo}}
+\begin{DoxyCompactList}\small\item\em Ponteiro para o endereço da variável com a velocidade do motor 3. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classRegistro_ae70cf3ef6b5b77664a9391cd8063a759_ae70cf3ef6b5b77664a9391cd8063a759}{imprime\+P\+ID}}
+\begin{DoxyCompactList}\small\item\em True = Deve imprimir as velocidades. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classRegistro_abd2932bac91ff248f03dd6350e81dd86_abd2932bac91ff248f03dd6350e81dd86}{imprime\+Velocidade}}
+\begin{DoxyCompactList}\small\item\em True = Deve imprimir as inclinações. \end{DoxyCompactList}\item 
+float $\ast$ \mbox{\hyperlink{classRegistro_ad679087d88e267f46aa86414c0e1131e_ad679087d88e267f46aa86414c0e1131e}{pitch}}
+\begin{DoxyCompactList}\small\item\em Ponteiro para o endereço da variável com o valor de inclinação no eixo roll. \end{DoxyCompactList}\item 
+float $\ast$ \mbox{\hyperlink{classRegistro_a813d79a6be84028a25ee3abbb605e1bd_a813d79a6be84028a25ee3abbb605e1bd}{roll}}
+\begin{DoxyCompactList}\small\item\em Ponteiro para o endereço da variável com o valor de tensão. \end{DoxyCompactList}\item 
+float $\ast$ \mbox{\hyperlink{classRegistro_ac1a903efb8ae64bcd8982bf29554b0ea_ac1a903efb8ae64bcd8982bf29554b0ea}{tensao}}
+\begin{DoxyCompactList}\small\item\em Ponteiro para o objeto \char`\"{}\+Controle\+Serial\char`\"{} para o envio de dados. \end{DoxyCompactList}\item 
+float $\ast$ \mbox{\hyperlink{classRegistro_a00eebbd3696386785de8b82989e4d0c9_a00eebbd3696386785de8b82989e4d0c9}{vel0}}
+\begin{DoxyCompactList}\small\item\em Ponteiro para o endereço da variável com o valor de inclinação no eixo yaw. \end{DoxyCompactList}\item 
+float $\ast$ \mbox{\hyperlink{classRegistro_a225ad99ae1066ea77b6367749229072b_a225ad99ae1066ea77b6367749229072b}{vel1}}
+\begin{DoxyCompactList}\small\item\em Ponteiro para o endereço da variável com a velocidade do motor 0. \end{DoxyCompactList}\item 
+float $\ast$ \mbox{\hyperlink{classRegistro_a31c24502030747178331214a52f51279_a31c24502030747178331214a52f51279}{vel2}}
+\begin{DoxyCompactList}\small\item\em Ponteiro para o endereço da variável com a velocidade do motor 1. \end{DoxyCompactList}\item 
+float $\ast$ \mbox{\hyperlink{classRegistro_a33b4c089f632f389093f71960dbf3bd3_a33b4c089f632f389093f71960dbf3bd3}{vel3}}
+\begin{DoxyCompactList}\small\item\em Ponteiro para o endereço da variável com a velocidade do motor 2. \end{DoxyCompactList}\item 
+float $\ast$ \mbox{\hyperlink{classRegistro_a87c8b58c65cfb33ef421abdb7bff2925_a87c8b58c65cfb33ef421abdb7bff2925}{yaw}}
+\begin{DoxyCompactList}\small\item\em Ponteiro para o endereço da variável com o valor de inclinação no eixo pitch. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{DescriÃ§Ã£o detalhada}
+Implementa um registro/log para dados do drone. 
+
+Elton, 14/08/2019. 
+
+\doxysubsection{DocumentaÃ§Ã£o dos Construtores \& Destrutor}
+\mbox{\Hypertarget{classRegistro_af8a2db6253c4bbfa8d56abb8625a7397_af8a2db6253c4bbfa8d56abb8625a7397}\label{classRegistro_af8a2db6253c4bbfa8d56abb8625a7397_af8a2db6253c4bbfa8d56abb8625a7397}} 
+\index{Registro@{Registro}!Registro@{Registro}}
+\index{Registro@{Registro}!Registro@{Registro}}
+\doxysubsubsection{\texorpdfstring{Registro()}{Registro()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRegistro}{Registro}} (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classControleSerial}{Controle\+Serial}} $\ast$}]{controle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construtor da Classe 
+
+Elton, 14/08/2019. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em controle} & Ponteiro para um objeto \char`\"{}\+Controle\+Serial\char`\"{} \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{DocumentaÃ§Ã£o dos mÃ©todos}
+\mbox{\Hypertarget{classRegistro_a388f572c62279f839ee138a9afbdeeb5_a388f572c62279f839ee138a9afbdeeb5}\label{classRegistro_a388f572c62279f839ee138a9afbdeeb5_a388f572c62279f839ee138a9afbdeeb5}} 
+\index{Registro@{Registro}!print@{print}}
+\index{print@{print}!Registro@{Registro}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Imprime os valores desejados na porta serial. 
+
+Elton, 14/08/2019. \mbox{\Hypertarget{classRegistro_aeffc3e68bfbea65f427cffb9d8d38594_aeffc3e68bfbea65f427cffb9d8d38594}\label{classRegistro_aeffc3e68bfbea65f427cffb9d8d38594_aeffc3e68bfbea65f427cffb9d8d38594}} 
+\index{Registro@{Registro}!printAngulo@{printAngulo}}
+\index{printAngulo@{printAngulo}!Registro@{Registro}}
+\doxysubsubsection{\texorpdfstring{printAngulo()}{printAngulo()}}
+{\footnotesize\ttfamily void print\+Angulo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+True = Deve imprimir os dados dos controladores P\+ID. 
+
+Imprime as inclinações. 
+
+Elton, 14/08/2019. \mbox{\Hypertarget{classRegistro_a71fd5ce49c52375d635eaf2b3beb4a0b_a71fd5ce49c52375d635eaf2b3beb4a0b}\label{classRegistro_a71fd5ce49c52375d635eaf2b3beb4a0b_a71fd5ce49c52375d635eaf2b3beb4a0b}} 
+\index{Registro@{Registro}!printPID@{printPID}}
+\index{printPID@{printPID}!Registro@{Registro}}
+\doxysubsubsection{\texorpdfstring{printPID()}{printPID()}}
+{\footnotesize\ttfamily void print\+P\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Imprime as inclinações. 
+
+Elton, 14/08/2019. \mbox{\Hypertarget{classRegistro_a6adb0c65b074da301bfe522eaf0ebc96_a6adb0c65b074da301bfe522eaf0ebc96}\label{classRegistro_a6adb0c65b074da301bfe522eaf0ebc96_a6adb0c65b074da301bfe522eaf0ebc96}} 
+\index{Registro@{Registro}!printTensao@{printTensao}}
+\index{printTensao@{printTensao}!Registro@{Registro}}
+\doxysubsubsection{\texorpdfstring{printTensao()}{printTensao()}}
+{\footnotesize\ttfamily void print\+Tensao (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Imprime a tensão. 
+
+Elton, 14/08/2019. \mbox{\Hypertarget{classRegistro_a5124414eff0f3f499479f1efed8e351c_a5124414eff0f3f499479f1efed8e351c}\label{classRegistro_a5124414eff0f3f499479f1efed8e351c_a5124414eff0f3f499479f1efed8e351c}} 
+\index{Registro@{Registro}!printVelocidade@{printVelocidade}}
+\index{printVelocidade@{printVelocidade}!Registro@{Registro}}
+\doxysubsubsection{\texorpdfstring{printVelocidade()}{printVelocidade()}}
+{\footnotesize\ttfamily void print\+Velocidade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Imprime as velocidades dos motores. 
+
+Elton, 14/08/2019. \mbox{\Hypertarget{classRegistro_a150321614d788f8b0ce1d27bd583e944_a150321614d788f8b0ce1d27bd583e944}\label{classRegistro_a150321614d788f8b0ce1d27bd583e944_a150321614d788f8b0ce1d27bd583e944}} 
+\index{Registro@{Registro}!setAngulo@{setAngulo}}
+\index{setAngulo@{setAngulo}!Registro@{Registro}}
+\doxysubsubsection{\texorpdfstring{setAngulo()}{setAngulo()}}
+{\footnotesize\ttfamily void set\+Angulo (\begin{DoxyParamCaption}\item[{float $\ast$}]{roll,  }\item[{float $\ast$}]{pitch,  }\item[{float $\ast$}]{yaw }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Define os endereços para as posições ângulares do robô. 
+
+Elton, 14/08/2019. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em roll} & Ponteiro para a variável que contém a leitura do eixo \char`\"{}roll\char`\"{}. \\
+\hline
+{\em pitch} & Ponteiro para a variável que contém a leitura do eixo \char`\"{}pitch\char`\"{}. \\
+\hline
+{\em yaw} & Ponteiro para a variável que contém a leitura do eixo \char`\"{}yaw\char`\"{}.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRegistro_a85cca12cf4985a9b22835e24a9ad6756_a85cca12cf4985a9b22835e24a9ad6756}\label{classRegistro_a85cca12cf4985a9b22835e24a9ad6756_a85cca12cf4985a9b22835e24a9ad6756}} 
+\index{Registro@{Registro}!setTensao@{setTensao}}
+\index{setTensao@{setTensao}!Registro@{Registro}}
+\doxysubsubsection{\texorpdfstring{setTensao()}{setTensao()}}
+{\footnotesize\ttfamily void set\+Tensao (\begin{DoxyParamCaption}\item[{float $\ast$}]{tensao }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Define o endereço para o valor de tensão. 
+
+Elton, 14/08/2019. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em tensao} & Ponteiro para a variável que contém a tensão lida. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRegistro_afcb4cc9f2cb3643c79b81289de9fef64_afcb4cc9f2cb3643c79b81289de9fef64}\label{classRegistro_afcb4cc9f2cb3643c79b81289de9fef64_afcb4cc9f2cb3643c79b81289de9fef64}} 
+\index{Registro@{Registro}!setVelocidade@{setVelocidade}}
+\index{setVelocidade@{setVelocidade}!Registro@{Registro}}
+\doxysubsubsection{\texorpdfstring{setVelocidade()}{setVelocidade()}}
+{\footnotesize\ttfamily void set\+Velocidade (\begin{DoxyParamCaption}\item[{float $\ast$}]{vel0,  }\item[{float $\ast$}]{vel1,  }\item[{float $\ast$}]{vel2,  }\item[{float $\ast$}]{vel3 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Define os endereços para as velocidades dos motores do robô. 
+
+Elton, 14/08/2019. 
+
+
+\begin{DoxyParams}{ParÃ¢metros}
+{\em vel0} & Ponteiro para a variável que contém a leitura do motor 0. \\
+\hline
+{\em vel1} & Ponteiro para a variável que contém a leitura do motor 1. \\
+\hline
+{\em vel2} & Ponteiro para a variável que contém a leitura do motor 2. \\
+\hline
+{\em vel3} & Ponteiro para a variável que contém a leitura do motor 3. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{DocumentaÃ§Ã£o dos dados membro}
+\mbox{\Hypertarget{classRegistro_aaf9bdf836274d2d9acab3d4dca1b81d8_aaf9bdf836274d2d9acab3d4dca1b81d8}\label{classRegistro_aaf9bdf836274d2d9acab3d4dca1b81d8_aaf9bdf836274d2d9acab3d4dca1b81d8}} 
+\index{Registro@{Registro}!controle@{controle}}
+\index{controle@{controle}!Registro@{Registro}}
+\doxysubsubsection{\texorpdfstring{controle}{controle}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classControleSerial}{Controle\+Serial}}$\ast$ controle\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classRegistro_a0693df9ca610ea588f4969db147497aa_a0693df9ca610ea588f4969db147497aa}\label{classRegistro_a0693df9ca610ea588f4969db147497aa_a0693df9ca610ea588f4969db147497aa}} 
+\index{Registro@{Registro}!imprimeAngulo@{imprimeAngulo}}
+\index{imprimeAngulo@{imprimeAngulo}!Registro@{Registro}}
+\doxysubsubsection{\texorpdfstring{imprimeAngulo}{imprimeAngulo}}
+{\footnotesize\ttfamily bool imprime\+Angulo\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Ponteiro para o endereço da variável com a velocidade do motor 3. 
+
+\mbox{\Hypertarget{classRegistro_ae70cf3ef6b5b77664a9391cd8063a759_ae70cf3ef6b5b77664a9391cd8063a759}\label{classRegistro_ae70cf3ef6b5b77664a9391cd8063a759_ae70cf3ef6b5b77664a9391cd8063a759}} 
+\index{Registro@{Registro}!imprimePID@{imprimePID}}
+\index{imprimePID@{imprimePID}!Registro@{Registro}}
+\doxysubsubsection{\texorpdfstring{imprimePID}{imprimePID}}
+{\footnotesize\ttfamily bool imprime\+P\+ID\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+True = Deve imprimir as velocidades. 
+
+\mbox{\Hypertarget{classRegistro_abd2932bac91ff248f03dd6350e81dd86_abd2932bac91ff248f03dd6350e81dd86}\label{classRegistro_abd2932bac91ff248f03dd6350e81dd86_abd2932bac91ff248f03dd6350e81dd86}} 
+\index{Registro@{Registro}!imprimeVelocidade@{imprimeVelocidade}}
+\index{imprimeVelocidade@{imprimeVelocidade}!Registro@{Registro}}
+\doxysubsubsection{\texorpdfstring{imprimeVelocidade}{imprimeVelocidade}}
+{\footnotesize\ttfamily bool imprime\+Velocidade\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+True = Deve imprimir as inclinações. 
+
+\mbox{\Hypertarget{classRegistro_ad679087d88e267f46aa86414c0e1131e_ad679087d88e267f46aa86414c0e1131e}\label{classRegistro_ad679087d88e267f46aa86414c0e1131e_ad679087d88e267f46aa86414c0e1131e}} 
+\index{Registro@{Registro}!pitch@{pitch}}
+\index{pitch@{pitch}!Registro@{Registro}}
+\doxysubsubsection{\texorpdfstring{pitch}{pitch}}
+{\footnotesize\ttfamily float $\ast$ pitch\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Ponteiro para o endereço da variável com o valor de inclinação no eixo roll. 
+
+\mbox{\Hypertarget{classRegistro_a813d79a6be84028a25ee3abbb605e1bd_a813d79a6be84028a25ee3abbb605e1bd}\label{classRegistro_a813d79a6be84028a25ee3abbb605e1bd_a813d79a6be84028a25ee3abbb605e1bd}} 
+\index{Registro@{Registro}!roll@{roll}}
+\index{roll@{roll}!Registro@{Registro}}
+\doxysubsubsection{\texorpdfstring{roll}{roll}}
+{\footnotesize\ttfamily float $\ast$ roll\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Ponteiro para o endereço da variável com o valor de tensão. 
+
+\mbox{\Hypertarget{classRegistro_ac1a903efb8ae64bcd8982bf29554b0ea_ac1a903efb8ae64bcd8982bf29554b0ea}\label{classRegistro_ac1a903efb8ae64bcd8982bf29554b0ea_ac1a903efb8ae64bcd8982bf29554b0ea}} 
+\index{Registro@{Registro}!tensao@{tensao}}
+\index{tensao@{tensao}!Registro@{Registro}}
+\doxysubsubsection{\texorpdfstring{tensao}{tensao}}
+{\footnotesize\ttfamily float$\ast$ tensao\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Ponteiro para o objeto \char`\"{}\+Controle\+Serial\char`\"{} para o envio de dados. 
+
+\mbox{\Hypertarget{classRegistro_a00eebbd3696386785de8b82989e4d0c9_a00eebbd3696386785de8b82989e4d0c9}\label{classRegistro_a00eebbd3696386785de8b82989e4d0c9_a00eebbd3696386785de8b82989e4d0c9}} 
+\index{Registro@{Registro}!vel0@{vel0}}
+\index{vel0@{vel0}!Registro@{Registro}}
+\doxysubsubsection{\texorpdfstring{vel0}{vel0}}
+{\footnotesize\ttfamily float $\ast$ vel0\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Ponteiro para o endereço da variável com o valor de inclinação no eixo yaw. 
+
+\mbox{\Hypertarget{classRegistro_a225ad99ae1066ea77b6367749229072b_a225ad99ae1066ea77b6367749229072b}\label{classRegistro_a225ad99ae1066ea77b6367749229072b_a225ad99ae1066ea77b6367749229072b}} 
+\index{Registro@{Registro}!vel1@{vel1}}
+\index{vel1@{vel1}!Registro@{Registro}}
+\doxysubsubsection{\texorpdfstring{vel1}{vel1}}
+{\footnotesize\ttfamily float $\ast$ vel1\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Ponteiro para o endereço da variável com a velocidade do motor 0. 
+
+\mbox{\Hypertarget{classRegistro_a31c24502030747178331214a52f51279_a31c24502030747178331214a52f51279}\label{classRegistro_a31c24502030747178331214a52f51279_a31c24502030747178331214a52f51279}} 
+\index{Registro@{Registro}!vel2@{vel2}}
+\index{vel2@{vel2}!Registro@{Registro}}
+\doxysubsubsection{\texorpdfstring{vel2}{vel2}}
+{\footnotesize\ttfamily float $\ast$ vel2\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Ponteiro para o endereço da variável com a velocidade do motor 1. 
+
+\mbox{\Hypertarget{classRegistro_a33b4c089f632f389093f71960dbf3bd3_a33b4c089f632f389093f71960dbf3bd3}\label{classRegistro_a33b4c089f632f389093f71960dbf3bd3_a33b4c089f632f389093f71960dbf3bd3}} 
+\index{Registro@{Registro}!vel3@{vel3}}
+\index{vel3@{vel3}!Registro@{Registro}}
+\doxysubsubsection{\texorpdfstring{vel3}{vel3}}
+{\footnotesize\ttfamily float $\ast$ vel3\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Ponteiro para o endereço da variável com a velocidade do motor 2. 
+
+\mbox{\Hypertarget{classRegistro_a87c8b58c65cfb33ef421abdb7bff2925_a87c8b58c65cfb33ef421abdb7bff2925}\label{classRegistro_a87c8b58c65cfb33ef421abdb7bff2925_a87c8b58c65cfb33ef421abdb7bff2925}} 
+\index{Registro@{Registro}!yaw@{yaw}}
+\index{yaw@{yaw}!Registro@{Registro}}
+\doxysubsubsection{\texorpdfstring{yaw}{yaw}}
+{\footnotesize\ttfamily float $\ast$ yaw\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Ponteiro para o endereço da variável com o valor de inclinação no eixo pitch. 
+
+
+
+A documentaÃ§Ã£o para esta classe foi gerada a partir do seguinte ficheiro\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Elton/source/\+Repos/ger-\/unicamp/\+Drone/\+Novo\+Drone/\+Novo\+Drone/\mbox{\hyperlink{1Classe_8ino}{1\+Classe.\+ino}}\end{DoxyCompactItemize}

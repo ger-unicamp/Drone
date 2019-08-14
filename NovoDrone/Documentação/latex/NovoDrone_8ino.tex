@@ -1,0 +1,101 @@
+\hypertarget{NovoDrone_8ino}{}\doxysection{Referência ao ficheiro C\+:/\+Users/\+Elton/source/\+Repos/ger-\/unicamp/\+Drone/\+Novo\+Drone/\+Novo\+Drone/\+Novo\+Drone.ino}
+\label{NovoDrone_8ino}\index{C:/Users/Elton/source/Repos/ger-\/unicamp/Drone/NovoDrone/NovoDrone/NovoDrone.ino@{C:/Users/Elton/source/Repos/ger-\/unicamp/Drone/NovoDrone/NovoDrone/NovoDrone.ino}}
+{\ttfamily \#include $<$Servo.\+h$>$}\newline
+{\ttfamily \#include $<$M\+P\+U6050\+\_\+tockn.\+h$>$}\newline
+{\ttfamily \#include $<$Wire.\+h$>$}\newline
+{\ttfamily \#include $<$P\+I\+D\+\_\+v1.\+h$>$}\newline
+{\ttfamily \#include $<$Software\+Serial.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{NovoDrone_8ino_ae1b2f4e36cfce78e2ec5b2b9526972e8_ae1b2f4e36cfce78e2ec5b2b9526972e8}{imprime\+Motor}}~0
+\item 
+\#define \mbox{\hyperlink{NovoDrone_8ino_a787cc3f8dd71ed8ea88ec55b18cfe9c0_a787cc3f8dd71ed8ea88ec55b18cfe9c0}{imprime\+Sensor}}~1
+\item 
+\#define \mbox{\hyperlink{NovoDrone_8ino_ad4f9673d16d231643789f081068d2372_ad4f9673d16d231643789f081068d2372}{KD}}~0
+\item 
+\#define \mbox{\hyperlink{NovoDrone_8ino_ade82752ae1652fdf0df9df7a16ffda29_ade82752ae1652fdf0df9df7a16ffda29}{KI}}~0
+\item 
+\#define \mbox{\hyperlink{NovoDrone_8ino_aa4729260b732666338dee7d841aa12f3_aa4729260b732666338dee7d841aa12f3}{KP}}~1
+\item 
+\#define \mbox{\hyperlink{NovoDrone_8ino_abe665826021d3fee71a276eb61e29413_abe665826021d3fee71a276eb61e29413}{L\+I\+GA}}~17
+\item 
+\#define \mbox{\hyperlink{NovoDrone_8ino_aa0b1e3ad95cc4757f91240735fb85b27_aa0b1e3ad95cc4757f91240735fb85b27}{output\+L\+I\+M\+IT}}~15
+\item 
+\#define \mbox{\hyperlink{NovoDrone_8ino_aed31713acb2817eddef0b9f04b796670_aed31713acb2817eddef0b9f04b796670}{Q\+U\+A\+N\+T\+\_\+\+M\+O\+T\+OR}}~4
+\item 
+\#define \mbox{\hyperlink{NovoDrone_8ino_ab6ec3c0f6eca96d818b50d3985e3bd06_ab6ec3c0f6eca96d818b50d3985e3bd06}{R\+O\+DA}}~31
+\item 
+\#define \mbox{\hyperlink{NovoDrone_8ino_a1492418dca3372493aac7e3824f66f3b_a1492418dca3372493aac7e3824f66f3b}{serial}}~1
+\item 
+\#define \mbox{\hyperlink{NovoDrone_8ino_a1a2b6514ea69d1b11b99840f39553e11_a1a2b6514ea69d1b11b99840f39553e11}{V\+OO}}~80
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentação das macros}
+\mbox{\Hypertarget{NovoDrone_8ino_ae1b2f4e36cfce78e2ec5b2b9526972e8_ae1b2f4e36cfce78e2ec5b2b9526972e8}\label{NovoDrone_8ino_ae1b2f4e36cfce78e2ec5b2b9526972e8_ae1b2f4e36cfce78e2ec5b2b9526972e8}} 
+\index{NovoDrone.ino@{NovoDrone.ino}!imprimeMotor@{imprimeMotor}}
+\index{imprimeMotor@{imprimeMotor}!NovoDrone.ino@{NovoDrone.ino}}
+\doxysubsubsection{\texorpdfstring{imprimeMotor}{imprimeMotor}}
+{\footnotesize\ttfamily \#define imprime\+Motor~0}
+
+\mbox{\Hypertarget{NovoDrone_8ino_a787cc3f8dd71ed8ea88ec55b18cfe9c0_a787cc3f8dd71ed8ea88ec55b18cfe9c0}\label{NovoDrone_8ino_a787cc3f8dd71ed8ea88ec55b18cfe9c0_a787cc3f8dd71ed8ea88ec55b18cfe9c0}} 
+\index{NovoDrone.ino@{NovoDrone.ino}!imprimeSensor@{imprimeSensor}}
+\index{imprimeSensor@{imprimeSensor}!NovoDrone.ino@{NovoDrone.ino}}
+\doxysubsubsection{\texorpdfstring{imprimeSensor}{imprimeSensor}}
+{\footnotesize\ttfamily \#define imprime\+Sensor~1}
+
+\mbox{\Hypertarget{NovoDrone_8ino_ad4f9673d16d231643789f081068d2372_ad4f9673d16d231643789f081068d2372}\label{NovoDrone_8ino_ad4f9673d16d231643789f081068d2372_ad4f9673d16d231643789f081068d2372}} 
+\index{NovoDrone.ino@{NovoDrone.ino}!KD@{KD}}
+\index{KD@{KD}!NovoDrone.ino@{NovoDrone.ino}}
+\doxysubsubsection{\texorpdfstring{KD}{KD}}
+{\footnotesize\ttfamily \#define KD~0}
+
+\mbox{\Hypertarget{NovoDrone_8ino_ade82752ae1652fdf0df9df7a16ffda29_ade82752ae1652fdf0df9df7a16ffda29}\label{NovoDrone_8ino_ade82752ae1652fdf0df9df7a16ffda29_ade82752ae1652fdf0df9df7a16ffda29}} 
+\index{NovoDrone.ino@{NovoDrone.ino}!KI@{KI}}
+\index{KI@{KI}!NovoDrone.ino@{NovoDrone.ino}}
+\doxysubsubsection{\texorpdfstring{KI}{KI}}
+{\footnotesize\ttfamily \#define KI~0}
+
+\mbox{\Hypertarget{NovoDrone_8ino_aa4729260b732666338dee7d841aa12f3_aa4729260b732666338dee7d841aa12f3}\label{NovoDrone_8ino_aa4729260b732666338dee7d841aa12f3_aa4729260b732666338dee7d841aa12f3}} 
+\index{NovoDrone.ino@{NovoDrone.ino}!KP@{KP}}
+\index{KP@{KP}!NovoDrone.ino@{NovoDrone.ino}}
+\doxysubsubsection{\texorpdfstring{KP}{KP}}
+{\footnotesize\ttfamily \#define KP~1}
+
+\mbox{\Hypertarget{NovoDrone_8ino_abe665826021d3fee71a276eb61e29413_abe665826021d3fee71a276eb61e29413}\label{NovoDrone_8ino_abe665826021d3fee71a276eb61e29413_abe665826021d3fee71a276eb61e29413}} 
+\index{NovoDrone.ino@{NovoDrone.ino}!LIGA@{LIGA}}
+\index{LIGA@{LIGA}!NovoDrone.ino@{NovoDrone.ino}}
+\doxysubsubsection{\texorpdfstring{LIGA}{LIGA}}
+{\footnotesize\ttfamily \#define L\+I\+GA~17}
+
+\mbox{\Hypertarget{NovoDrone_8ino_aa0b1e3ad95cc4757f91240735fb85b27_aa0b1e3ad95cc4757f91240735fb85b27}\label{NovoDrone_8ino_aa0b1e3ad95cc4757f91240735fb85b27_aa0b1e3ad95cc4757f91240735fb85b27}} 
+\index{NovoDrone.ino@{NovoDrone.ino}!outputLIMIT@{outputLIMIT}}
+\index{outputLIMIT@{outputLIMIT}!NovoDrone.ino@{NovoDrone.ino}}
+\doxysubsubsection{\texorpdfstring{outputLIMIT}{outputLIMIT}}
+{\footnotesize\ttfamily \#define output\+L\+I\+M\+IT~15}
+
+\mbox{\Hypertarget{NovoDrone_8ino_aed31713acb2817eddef0b9f04b796670_aed31713acb2817eddef0b9f04b796670}\label{NovoDrone_8ino_aed31713acb2817eddef0b9f04b796670_aed31713acb2817eddef0b9f04b796670}} 
+\index{NovoDrone.ino@{NovoDrone.ino}!QUANT\_MOTOR@{QUANT\_MOTOR}}
+\index{QUANT\_MOTOR@{QUANT\_MOTOR}!NovoDrone.ino@{NovoDrone.ino}}
+\doxysubsubsection{\texorpdfstring{QUANT\_MOTOR}{QUANT\_MOTOR}}
+{\footnotesize\ttfamily \#define Q\+U\+A\+N\+T\+\_\+\+M\+O\+T\+OR~4}
+
+\mbox{\Hypertarget{NovoDrone_8ino_ab6ec3c0f6eca96d818b50d3985e3bd06_ab6ec3c0f6eca96d818b50d3985e3bd06}\label{NovoDrone_8ino_ab6ec3c0f6eca96d818b50d3985e3bd06_ab6ec3c0f6eca96d818b50d3985e3bd06}} 
+\index{NovoDrone.ino@{NovoDrone.ino}!RODA@{RODA}}
+\index{RODA@{RODA}!NovoDrone.ino@{NovoDrone.ino}}
+\doxysubsubsection{\texorpdfstring{RODA}{RODA}}
+{\footnotesize\ttfamily \#define R\+O\+DA~31}
+
+\mbox{\Hypertarget{NovoDrone_8ino_a1492418dca3372493aac7e3824f66f3b_a1492418dca3372493aac7e3824f66f3b}\label{NovoDrone_8ino_a1492418dca3372493aac7e3824f66f3b_a1492418dca3372493aac7e3824f66f3b}} 
+\index{NovoDrone.ino@{NovoDrone.ino}!serial@{serial}}
+\index{serial@{serial}!NovoDrone.ino@{NovoDrone.ino}}
+\doxysubsubsection{\texorpdfstring{serial}{serial}}
+{\footnotesize\ttfamily \#define serial~1}
+
+\mbox{\Hypertarget{NovoDrone_8ino_a1a2b6514ea69d1b11b99840f39553e11_a1a2b6514ea69d1b11b99840f39553e11}\label{NovoDrone_8ino_a1a2b6514ea69d1b11b99840f39553e11_a1a2b6514ea69d1b11b99840f39553e11}} 
+\index{NovoDrone.ino@{NovoDrone.ino}!VOO@{VOO}}
+\index{VOO@{VOO}!NovoDrone.ino@{NovoDrone.ino}}
+\doxysubsubsection{\texorpdfstring{VOO}{VOO}}
+{\footnotesize\ttfamily \#define V\+OO~80}
+

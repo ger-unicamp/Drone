@@ -1,0 +1,202 @@
+\hypertarget{classInercial}{}\doxysection{Inercial}
+\label{classInercial}\index{Inercial@{Inercial}}
+
+
+Classe para controle de uma I\+MU do modelo \char`\"{}\+M\+P\+U6050\char`\"{}  
+
+
+Diagrama de heranças da classe Inercial\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classInercial}
+\end{center}
+\end{figure}
+\doxysubsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classInercial_a104ba6760a289b8db1307d43ca921197_a104ba6760a289b8db1307d43ca921197}{Inercial}} (Two\+Wire \&w)
+\begin{DoxyCompactList}\small\item\em Construtor da classe \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classInercial_a550128a969585b8a64a53ecc384ec361_a550128a969585b8a64a53ecc384ec361}{get\+Pitch}} ()
+\begin{DoxyCompactList}\small\item\em Retorna o valor filtrado no eixo Pitch. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classInercial_a80829684c889d9492db5f72006a8afbb_a80829684c889d9492db5f72006a8afbb}{get\+Roll}} ()
+\begin{DoxyCompactList}\small\item\em Retorna o valor filtrado no eixo Roll. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classInercial_a4829acab810a443dd7001a73a20b83e5_a4829acab810a443dd7001a73a20b83e5}{get\+Yaw}} ()
+\begin{DoxyCompactList}\small\item\em Retorna o valor filtrado no eixo Yaw. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classInercial_a1b534bc702a097e3544b991e2bacfc38_a1b534bc702a097e3544b991e2bacfc38}{leitura}} ()
+\begin{DoxyCompactList}\small\item\em Efetua uma leitura filtrando os valores lidos \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Protegidos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPassaBaixa}{Passa\+Baixa}} \mbox{\hyperlink{classInercial_a82e85cd24f1164ed7a9a653df3c3fdf4_a82e85cd24f1164ed7a9a653df3c3fdf4}{filtro\+Pitch}}
+\begin{DoxyCompactList}\small\item\em Filtro passa baixa para o eixo Roll. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPassaBaixa}{Passa\+Baixa}} \mbox{\hyperlink{classInercial_a285d6996da6769b2ce4fd2928275150e_a285d6996da6769b2ce4fd2928275150e}{filtro\+Roll}}
+\begin{DoxyCompactList}\small\item\em �ltimo valor lido e filtrado no eixo roll. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPassaBaixa}{Passa\+Baixa}} \mbox{\hyperlink{classInercial_afba984c301b97eab0aa02c40bb4b805a_afba984c301b97eab0aa02c40bb4b805a}{filtro\+Yaw}}
+\begin{DoxyCompactList}\small\item\em Filtro passa baixa para o eixo Pitch. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classInercial_a282e7d4378d4a18a805b8980295ac86c_a282e7d4378d4a18a805b8980295ac86c}{pitch}}
+\begin{DoxyCompactList}\small\item\em �ltimo valor lido e filtrado no eixo roll. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classInercial_a26fd84d522945b6038221d9e38c7cc39_a26fd84d522945b6038221d9e38c7cc39}{roll}}
+\item 
+float \mbox{\hyperlink{classInercial_a7efc219781df4a1e281cb5d348b7fbf9_a7efc219781df4a1e281cb5d348b7fbf9}{yaw}}
+\begin{DoxyCompactList}\small\item\em �ltimo valor lido e filtrado no eixo roll. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Amigos}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classInercial_a9205444021fc8aa87162996750e6f6af_a9205444021fc8aa87162996750e6f6af}{Registro}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Classe para controle de uma I\+MU do modelo \char`\"{}\+M\+P\+U6050\char`\"{} 
+
+Elton, 14/08/2019. 
+
+\doxysubsection{Documentação dos Construtores \& Destrutor}
+\mbox{\Hypertarget{classInercial_a104ba6760a289b8db1307d43ca921197_a104ba6760a289b8db1307d43ca921197}\label{classInercial_a104ba6760a289b8db1307d43ca921197_a104ba6760a289b8db1307d43ca921197}} 
+\index{Inercial@{Inercial}!Inercial@{Inercial}}
+\index{Inercial@{Inercial}!Inercial@{Inercial}}
+\doxysubsubsection{\texorpdfstring{Inercial()}{Inercial()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classInercial}{Inercial}} (\begin{DoxyParamCaption}\item[{Two\+Wire \&}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construtor da classe 
+
+Elton, 14/08/2019. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em w} & Objeto \char`\"{}\+Wire\char`\"{} \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentação dos métodos}
+\mbox{\Hypertarget{classInercial_a550128a969585b8a64a53ecc384ec361_a550128a969585b8a64a53ecc384ec361}\label{classInercial_a550128a969585b8a64a53ecc384ec361_a550128a969585b8a64a53ecc384ec361}} 
+\index{Inercial@{Inercial}!getPitch@{getPitch}}
+\index{getPitch@{getPitch}!Inercial@{Inercial}}
+\doxysubsubsection{\texorpdfstring{getPitch()}{getPitch()}}
+{\footnotesize\ttfamily float get\+Pitch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna o valor filtrado no eixo Pitch. 
+
+Elton, 14/08/2019. 
+
+\begin{DoxyReturn}{Retorna}
+Valor filtrado no eixo Pitch em \mbox{[}m/s$^\wedge$2\mbox{]}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classInercial_a80829684c889d9492db5f72006a8afbb_a80829684c889d9492db5f72006a8afbb}\label{classInercial_a80829684c889d9492db5f72006a8afbb_a80829684c889d9492db5f72006a8afbb}} 
+\index{Inercial@{Inercial}!getRoll@{getRoll}}
+\index{getRoll@{getRoll}!Inercial@{Inercial}}
+\doxysubsubsection{\texorpdfstring{getRoll()}{getRoll()}}
+{\footnotesize\ttfamily float get\+Roll (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna o valor filtrado no eixo Roll. 
+
+Elton, 14/08/2019. 
+
+\begin{DoxyReturn}{Retorna}
+Valor filtrado no eixo Roll em \mbox{[}m/s$^\wedge$2\mbox{]}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classInercial_a4829acab810a443dd7001a73a20b83e5_a4829acab810a443dd7001a73a20b83e5}\label{classInercial_a4829acab810a443dd7001a73a20b83e5_a4829acab810a443dd7001a73a20b83e5}} 
+\index{Inercial@{Inercial}!getYaw@{getYaw}}
+\index{getYaw@{getYaw}!Inercial@{Inercial}}
+\doxysubsubsection{\texorpdfstring{getYaw()}{getYaw()}}
+{\footnotesize\ttfamily float get\+Yaw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Retorna o valor filtrado no eixo Yaw. 
+
+Elton, 14/08/2019. 
+
+\begin{DoxyReturn}{Retorna}
+Valor filtrado no eixo Yaw em \mbox{[}m/s$^\wedge$2\mbox{]}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classInercial_a1b534bc702a097e3544b991e2bacfc38_a1b534bc702a097e3544b991e2bacfc38}\label{classInercial_a1b534bc702a097e3544b991e2bacfc38_a1b534bc702a097e3544b991e2bacfc38}} 
+\index{Inercial@{Inercial}!leitura@{leitura}}
+\index{leitura@{leitura}!Inercial@{Inercial}}
+\doxysubsubsection{\texorpdfstring{leitura()}{leitura()}}
+{\footnotesize\ttfamily void leitura (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Efetua uma leitura filtrando os valores lidos 
+
+Elton, 14/08/2019. 
+
+\doxysubsection{Documentação das classes amigas e funções relacionadas}
+\mbox{\Hypertarget{classInercial_a9205444021fc8aa87162996750e6f6af_a9205444021fc8aa87162996750e6f6af}\label{classInercial_a9205444021fc8aa87162996750e6f6af_a9205444021fc8aa87162996750e6f6af}} 
+\index{Inercial@{Inercial}!Registro@{Registro}}
+\index{Registro@{Registro}!Inercial@{Inercial}}
+\doxysubsubsection{\texorpdfstring{Registro}{Registro}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classRegistro}{Registro}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Documentação dos dados membro}
+\mbox{\Hypertarget{classInercial_a82e85cd24f1164ed7a9a653df3c3fdf4_a82e85cd24f1164ed7a9a653df3c3fdf4}\label{classInercial_a82e85cd24f1164ed7a9a653df3c3fdf4_a82e85cd24f1164ed7a9a653df3c3fdf4}} 
+\index{Inercial@{Inercial}!filtroPitch@{filtroPitch}}
+\index{filtroPitch@{filtroPitch}!Inercial@{Inercial}}
+\doxysubsubsection{\texorpdfstring{filtroPitch}{filtroPitch}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPassaBaixa}{Passa\+Baixa}} filtro\+Pitch\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Filtro passa baixa para o eixo Roll. 
+
+\mbox{\Hypertarget{classInercial_a285d6996da6769b2ce4fd2928275150e_a285d6996da6769b2ce4fd2928275150e}\label{classInercial_a285d6996da6769b2ce4fd2928275150e_a285d6996da6769b2ce4fd2928275150e}} 
+\index{Inercial@{Inercial}!filtroRoll@{filtroRoll}}
+\index{filtroRoll@{filtroRoll}!Inercial@{Inercial}}
+\doxysubsubsection{\texorpdfstring{filtroRoll}{filtroRoll}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPassaBaixa}{Passa\+Baixa}} filtro\+Roll\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+�ltimo valor lido e filtrado no eixo roll. 
+
+\mbox{\Hypertarget{classInercial_afba984c301b97eab0aa02c40bb4b805a_afba984c301b97eab0aa02c40bb4b805a}\label{classInercial_afba984c301b97eab0aa02c40bb4b805a_afba984c301b97eab0aa02c40bb4b805a}} 
+\index{Inercial@{Inercial}!filtroYaw@{filtroYaw}}
+\index{filtroYaw@{filtroYaw}!Inercial@{Inercial}}
+\doxysubsubsection{\texorpdfstring{filtroYaw}{filtroYaw}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPassaBaixa}{Passa\+Baixa}} filtro\+Yaw\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Filtro passa baixa para o eixo Pitch. 
+
+\mbox{\Hypertarget{classInercial_a282e7d4378d4a18a805b8980295ac86c_a282e7d4378d4a18a805b8980295ac86c}\label{classInercial_a282e7d4378d4a18a805b8980295ac86c_a282e7d4378d4a18a805b8980295ac86c}} 
+\index{Inercial@{Inercial}!pitch@{pitch}}
+\index{pitch@{pitch}!Inercial@{Inercial}}
+\doxysubsubsection{\texorpdfstring{pitch}{pitch}}
+{\footnotesize\ttfamily float pitch\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+�ltimo valor lido e filtrado no eixo roll. 
+
+\mbox{\Hypertarget{classInercial_a26fd84d522945b6038221d9e38c7cc39_a26fd84d522945b6038221d9e38c7cc39}\label{classInercial_a26fd84d522945b6038221d9e38c7cc39_a26fd84d522945b6038221d9e38c7cc39}} 
+\index{Inercial@{Inercial}!roll@{roll}}
+\index{roll@{roll}!Inercial@{Inercial}}
+\doxysubsubsection{\texorpdfstring{roll}{roll}}
+{\footnotesize\ttfamily float roll\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classInercial_a7efc219781df4a1e281cb5d348b7fbf9_a7efc219781df4a1e281cb5d348b7fbf9}\label{classInercial_a7efc219781df4a1e281cb5d348b7fbf9_a7efc219781df4a1e281cb5d348b7fbf9}} 
+\index{Inercial@{Inercial}!yaw@{yaw}}
+\index{yaw@{yaw}!Inercial@{Inercial}}
+\doxysubsubsection{\texorpdfstring{yaw}{yaw}}
+{\footnotesize\ttfamily float yaw\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+�ltimo valor lido e filtrado no eixo roll. 
+
+
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Elton/source/\+Repos/ger-\/unicamp/\+Drone/\+Novo\+Drone/\+Novo\+Drone/\mbox{\hyperlink{1Classe_8ino}{1\+Classe.\+ino}}\end{DoxyCompactItemize}

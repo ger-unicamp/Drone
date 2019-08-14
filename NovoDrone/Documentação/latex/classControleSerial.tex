@@ -1,0 +1,170 @@
+\hypertarget{classControleSerial}{}\doxysection{Controle\+Serial}
+\label{classControleSerial}\index{ControleSerial@{ControleSerial}}
+
+
+Realiza o envio e recebimento de dados da porta serial, que pode ser definida  
+
+
+\doxysubsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classControleSerial_a0ca09f90b2ac7bf20b6df6b01b02d7a3_a0ca09f90b2ac7bf20b6df6b01b02d7a3}{Controle\+Serial}} ()
+\begin{DoxyCompactList}\small\item\em Construtor da classe \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classControleSerial_a448864f81ea706a6cd02f9bc25af980e_a448864f81ea706a6cd02f9bc25af980e}{iniciar}} (int uso)
+\begin{DoxyCompactList}\small\item\em Inicia a comunica��o serial na porta desejada. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class tipo $>$ }\\void \mbox{\hyperlink{classControleSerial_a0ef11840b7215d94b73de60f22b27c0f_a0ef11840b7215d94b73de60f22b27c0f}{print}} (tipo texto)
+\begin{DoxyCompactList}\small\item\em Imprime um valor dado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classControleSerial_a09924d963d1af8ede9841230001c31ab_a09924d963d1af8ede9841230001c31ab}{println}} ()
+\begin{DoxyCompactList}\small\item\em Imprime uma quebra de linha \end{DoxyCompactList}\item 
+{\footnotesize template$<$class tipo $>$ }\\void \mbox{\hyperlink{classControleSerial_a53a3c734118e088fb247822e21266f74_a53a3c734118e088fb247822e21266f74}{println}} (tipo texto)
+\begin{DoxyCompactList}\small\item\em Imprime um valor dado, com uma quebra de linha. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classControleSerial_a29395e48789c54171d44b9a6378e3785_a29395e48789c54171d44b9a6378e3785}{set\+Serial}} (Software\+Serial $\ast$\mbox{\hyperlink{classControleSerial_a5ddcbc36d66ee15df1ee12bfc1ddbd43_a5ddcbc36d66ee15df1ee12bfc1ddbd43}{serial2}})
+\begin{DoxyCompactList}\small\item\em Define uma outra porta serial. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Protegidos}
+\begin{DoxyCompactItemize}
+\item 
+Software\+Serial $\ast$ \mbox{\hyperlink{classControleSerial_a5ddcbc36d66ee15df1ee12bfc1ddbd43_a5ddcbc36d66ee15df1ee12bfc1ddbd43}{serial2}}
+\begin{DoxyCompactList}\small\item\em Ponteiro para o objeto serial definido pelo usu�rio. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classControleSerial_ac4bc1546af29c74855936fd912f839b4_ac4bc1546af29c74855936fd912f839b4}{usando}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descrição detalhada}
+Realiza o envio e recebimento de dados da porta serial, que pode ser definida 
+
+Elton, 14/08/2019 
+
+\doxysubsection{Documentação dos Construtores \& Destrutor}
+\mbox{\Hypertarget{classControleSerial_a0ca09f90b2ac7bf20b6df6b01b02d7a3_a0ca09f90b2ac7bf20b6df6b01b02d7a3}\label{classControleSerial_a0ca09f90b2ac7bf20b6df6b01b02d7a3_a0ca09f90b2ac7bf20b6df6b01b02d7a3}} 
+\index{ControleSerial@{ControleSerial}!ControleSerial@{ControleSerial}}
+\index{ControleSerial@{ControleSerial}!ControleSerial@{ControleSerial}}
+\doxysubsubsection{\texorpdfstring{ControleSerial()}{ControleSerial()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classControleSerial}{Controle\+Serial}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construtor da classe 
+
+Elton, 14/08/2019. 
+
+\doxysubsection{Documentação dos métodos}
+\mbox{\Hypertarget{classControleSerial_a448864f81ea706a6cd02f9bc25af980e_a448864f81ea706a6cd02f9bc25af980e}\label{classControleSerial_a448864f81ea706a6cd02f9bc25af980e_a448864f81ea706a6cd02f9bc25af980e}} 
+\index{ControleSerial@{ControleSerial}!iniciar@{iniciar}}
+\index{iniciar@{iniciar}!ControleSerial@{ControleSerial}}
+\doxysubsubsection{\texorpdfstring{iniciar()}{iniciar()}}
+{\footnotesize\ttfamily void iniciar (\begin{DoxyParamCaption}\item[{int}]{uso }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicia a comunica��o serial na porta desejada. 
+
+Elton, 14/08/2019. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em uso} & Porta desejada\+: 
+
+0 = Padr�o do Arduino 
+
+1 = Porta definada pelo usu�rio \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classControleSerial_a0ef11840b7215d94b73de60f22b27c0f_a0ef11840b7215d94b73de60f22b27c0f}\label{classControleSerial_a0ef11840b7215d94b73de60f22b27c0f_a0ef11840b7215d94b73de60f22b27c0f}} 
+\index{ControleSerial@{ControleSerial}!print@{print}}
+\index{print@{print}!ControleSerial@{ControleSerial}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void print (\begin{DoxyParamCaption}\item[{tipo}]{texto }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Imprime um valor dado. 
+
+Elton, 14/08/2019. 
+
+
+\begin{DoxyTemplParams}{Parâmetros de template}
+{\em tipo} & Tipo do valor. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parâmetros}
+{\em texto} & O valor a ser impresso. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classControleSerial_a09924d963d1af8ede9841230001c31ab_a09924d963d1af8ede9841230001c31ab}\label{classControleSerial_a09924d963d1af8ede9841230001c31ab_a09924d963d1af8ede9841230001c31ab}} 
+\index{ControleSerial@{ControleSerial}!println@{println}}
+\index{println@{println}!ControleSerial@{ControleSerial}}
+\doxysubsubsection{\texorpdfstring{println()}{println()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void println (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Imprime uma quebra de linha 
+
+Elton, 14/08/2019. \mbox{\Hypertarget{classControleSerial_a53a3c734118e088fb247822e21266f74_a53a3c734118e088fb247822e21266f74}\label{classControleSerial_a53a3c734118e088fb247822e21266f74_a53a3c734118e088fb247822e21266f74}} 
+\index{ControleSerial@{ControleSerial}!println@{println}}
+\index{println@{println}!ControleSerial@{ControleSerial}}
+\doxysubsubsection{\texorpdfstring{println()}{println()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void println (\begin{DoxyParamCaption}\item[{tipo}]{texto }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Imprime um valor dado, com uma quebra de linha. 
+
+Elton, 14/08/2019. 
+
+
+\begin{DoxyTemplParams}{Parâmetros de template}
+{\em tipo} & Tipo do valor. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parâmetros}
+{\em texto} & O valor a ser impresso. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classControleSerial_a29395e48789c54171d44b9a6378e3785_a29395e48789c54171d44b9a6378e3785}\label{classControleSerial_a29395e48789c54171d44b9a6378e3785_a29395e48789c54171d44b9a6378e3785}} 
+\index{ControleSerial@{ControleSerial}!setSerial@{setSerial}}
+\index{setSerial@{setSerial}!ControleSerial@{ControleSerial}}
+\doxysubsubsection{\texorpdfstring{setSerial()}{setSerial()}}
+{\footnotesize\ttfamily void set\+Serial (\begin{DoxyParamCaption}\item[{Software\+Serial $\ast$}]{serial2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Define uma outra porta serial. 
+
+Elton, 14/08/2019. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em serial2} & Ponteiro para o objeto \char`\"{}\+Software\+Serial\char`\"{} da nova porta. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentação dos dados membro}
+\mbox{\Hypertarget{classControleSerial_a5ddcbc36d66ee15df1ee12bfc1ddbd43_a5ddcbc36d66ee15df1ee12bfc1ddbd43}\label{classControleSerial_a5ddcbc36d66ee15df1ee12bfc1ddbd43_a5ddcbc36d66ee15df1ee12bfc1ddbd43}} 
+\index{ControleSerial@{ControleSerial}!serial2@{serial2}}
+\index{serial2@{serial2}!ControleSerial@{ControleSerial}}
+\doxysubsubsection{\texorpdfstring{serial2}{serial2}}
+{\footnotesize\ttfamily Software\+Serial$\ast$ serial2\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Ponteiro para o objeto serial definido pelo usu�rio. 
+
+\mbox{\Hypertarget{classControleSerial_ac4bc1546af29c74855936fd912f839b4_ac4bc1546af29c74855936fd912f839b4}\label{classControleSerial_ac4bc1546af29c74855936fd912f839b4_ac4bc1546af29c74855936fd912f839b4}} 
+\index{ControleSerial@{ControleSerial}!usando@{usando}}
+\index{usando@{usando}!ControleSerial@{ControleSerial}}
+\doxysubsubsection{\texorpdfstring{usando}{usando}}
+{\footnotesize\ttfamily int usando\hspace{0.3cm}{\ttfamily [protected]}}
+
+Cont�m o �ndice da porta sendo usada. 
+
+0 = Padr�o do Arduino 
+
+1 = Porta definada pelo usu�rio 
+
+A documentação para esta classe foi gerada a partir do seguinte ficheiro\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Elton/source/\+Repos/ger-\/unicamp/\+Drone/\+Novo\+Drone/\+Novo\+Drone/\mbox{\hyperlink{1Classe_8ino}{1\+Classe.\+ino}}\end{DoxyCompactItemize}

@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Documentação do Drone: Inercial::filtroPitch</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Documentação do Drone
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="class_inercial.html">Inercial</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="contents">
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+   <td valign="top">
+      <div class="navtab">
+        <table>
+          <tr><td class="navtab"><a class="qindexHL" href="class_inercial_af54714879f918d13300997e82b32ce91.html#af54714879f918d13300997e82b32ce91">filtroPitch</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="class_inercial_ae9612e623bce001eaf47c64249691475.html#ae9612e623bce001eaf47c64249691475">filtroRoll</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="class_inercial_ad2b570e4099f265c955b76ad7121d674.html#ad2b570e4099f265c955b76ad7121d674">filtroYaw</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="class_inercial_a256f847e1c21433269f1845594d862cf.html#a256f847e1c21433269f1845594d862cf">getPitch</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="class_inercial_aa28fabab19ed6a284e2b0dc6e9b80874.html#aa28fabab19ed6a284e2b0dc6e9b80874">getRoll</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="class_inercial_a2b2f962d743c7cbc171b65f9e43bf714.html#a2b2f962d743c7cbc171b65f9e43bf714">getYaw</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="class_inercial_abf54de27850af73eff4268d9b81512f7.html#abf54de27850af73eff4268d9b81512f7">Inercial</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="class_inercial_ab878b3d2e466f04a1c2925cd85c5cf38.html#ab878b3d2e466f04a1c2925cd85c5cf38">leitura</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="class_inercial_a70c2a8a2fc2d7512172c8f2e573a65e3.html#a70c2a8a2fc2d7512172c8f2e573a65e3">pitch</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="class_inercial_a211e13f790366e2e84f38ddc781c21e6.html#a211e13f790366e2e84f38ddc781c21e6">roll</a></td></tr>
+          <tr><td class="navtab"><a class="qindex" href="class_inercial_a48d951d87e3e1e8026849497f4cdee61.html#a48d951d87e3e1e8026849497f4cdee61">yaw</a></td></tr>
+        </table>
+      </div>
+   </td>
+   <td valign="top" class="mempage">
+<a id="af54714879f918d13300997e82b32ce91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af54714879f918d13300997e82b32ce91">&#9670;&nbsp;</a></span>filtroPitch</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_passa_baixa.html">PassaBaixa</a> Inercial::filtroPitch</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+    </td>
+  </tr>
+</table>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.16
+</small></address>
+</body>
+</html>
