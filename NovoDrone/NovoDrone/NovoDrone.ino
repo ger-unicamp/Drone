@@ -1,19 +1,35 @@
-#include <Servo.h>
+Ôªø#include <Servo.h>
 #include <MPU6050_tockn.h>
 #include <Wire.h>
 #include <PID_v1.h>
 #include <SoftwareSerial.h>
 
-#define LIGA      17  //MÌnimo necess·rio para ligar os ESCS
-#define RODA      31  //MÌnimo necess·rio para os motores comeÁarem a rodar    
-#define VOO       80 //MÌnimo necess·rio para o drone levantar voo
-#define QUANT_MOTOR   4
+/// <value> Velocidade m√≠nima necess√°ria para ligar os motores </value>
+#define LIGA 17 
+/// <value> Velocidade m√≠nima necess√°ria para os motores come√ßarem a rodar </value>
+#define RODA 31    
+/// <value> Velocidade m√≠nima necess√°ria para o drone levantar voo </value>
+#define VOO  80
+/// <value> Quantidade de motores do drone </value>
+#define QUANT_MOTOR   4 
 
-#define outputLIMIT 15
-#define KP 1
-#define KI 0
-#define KD 0
-#define serial 1 //1 = bluetooth, 0 = serial
-#define imprimeSensor 1
-#define imprimeMotor 0
+/// <value> Limite de velocidade dos motores </value>
+#define outputLIMIT 15 
+/// <value> Constante proporcial do PIDPitch </value>
+#define KPpitch 1
+/// <value> Constante integrativa do PIDPitch </value>
+#define KIpitch 0 
+/// <value> Constante derivativa do PIDPitch </value>
+#define KDpitch 0 
 
+/// <value> <para> Constante de controle da porta de comunica√ß√£o utilizada </para>
+/// <para> 1 = bluetooth,	0 = serial </para> </value> 
+#define serial 1 
+
+/// <value> <para> Constante de controle do registro </para> 
+/// <para> 0 = n√£o registrar dados dos sensores, 1 = registrar </para> </value>
+#define imprimeSensor 1 
+
+/// <value> <para> Constante de controle do registro </para>
+/// <para> 0 = n√£o registrar dados dos motores, 1 = registrar </para> </value>
+#define imprimeMotor 0 

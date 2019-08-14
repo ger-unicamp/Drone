@@ -1,0 +1,162 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\babel@toc {portuges}{}
+\contentsline {chapter}{\numberline {1}\IeC {\'I}ndice da hierarquia}{1}{chapter.1}% 
+\contentsline {section}{\numberline {1.1}Hierarquia de classes}{1}{section.1.1}% 
+\contentsline {chapter}{\numberline {2}\IeC {\'I}ndice dos componentes}{3}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}Lista de componentes}{3}{section.2.1}% 
+\contentsline {chapter}{\numberline {3}\IeC {\'I}ndice dos ficheiros}{5}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Lista de ficheiros}{5}{section.3.1}% 
+\contentsline {chapter}{\numberline {4}Documenta\IeC {\c c}\IeC {\~a}o da classe}{7}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Controle\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Serial}{7}{section.4.1}% 
+\contentsline {subsection}{\numberline {4.1.1}Descri\IeC {\c c}\IeC {\~a}o detalhada}{7}{subsection.4.1.1}% 
+\contentsline {subsection}{\numberline {4.1.2}Documenta\IeC {\c c}\IeC {\~a}o dos Construtores \& Destrutor}{8}{subsection.4.1.2}% 
+\contentsline {subsubsection}{\numberline {4.1.2.1}ControleSerial()}{8}{subsubsection.4.1.2.1}% 
+\contentsline {subsection}{\numberline {4.1.3}Documenta\IeC {\c c}\IeC {\~a}o dos m\IeC {\'e}todos}{8}{subsection.4.1.3}% 
+\contentsline {subsubsection}{\numberline {4.1.3.1}iniciar()}{8}{subsubsection.4.1.3.1}% 
+\contentsline {subsubsection}{\numberline {4.1.3.2}print()}{8}{subsubsection.4.1.3.2}% 
+\contentsline {subsubsection}{\numberline {4.1.3.3}println()\hspace {0.1cm}{\relax \fontsize {8}{9.5}\selectfont \abovedisplayskip 6\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 3\p@ plus\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip \ttfamily [1/2]}}{9}{subsubsection.4.1.3.3}% 
+\contentsline {subsubsection}{\numberline {4.1.3.4}println()\hspace {0.1cm}{\relax \fontsize {8}{9.5}\selectfont \abovedisplayskip 6\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 3\p@ plus\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip \ttfamily [2/2]}}{9}{subsubsection.4.1.3.4}% 
+\contentsline {subsubsection}{\numberline {4.1.3.5}setSerial()}{9}{subsubsection.4.1.3.5}% 
+\contentsline {subsection}{\numberline {4.1.4}Documenta\IeC {\c c}\IeC {\~a}o dos dados membro}{10}{subsection.4.1.4}% 
+\contentsline {subsubsection}{\numberline {4.1.4.1}serial2}{10}{subsubsection.4.1.4.1}% 
+\contentsline {subsubsection}{\numberline {4.1.4.2}usando}{10}{subsubsection.4.1.4.2}% 
+\contentsline {section}{\numberline {4.2}Drone}{10}{section.4.2}% 
+\contentsline {subsection}{\numberline {4.2.1}Descri\IeC {\c c}\IeC {\~a}o detalhada}{11}{subsection.4.2.1}% 
+\contentsline {subsection}{\numberline {4.2.2}Documenta\IeC {\c c}\IeC {\~a}o dos Construtores \& Destrutor}{11}{subsection.4.2.2}% 
+\contentsline {subsubsection}{\numberline {4.2.2.1}Drone()}{11}{subsubsection.4.2.2.1}% 
+\contentsline {subsection}{\numberline {4.2.3}Documenta\IeC {\c c}\IeC {\~a}o dos m\IeC {\'e}todos}{11}{subsection.4.2.3}% 
+\contentsline {subsubsection}{\numberline {4.2.3.1}atualiza()}{12}{subsubsection.4.2.3.1}% 
+\contentsline {subsubsection}{\numberline {4.2.3.2}atualizaEntradas()}{12}{subsubsection.4.2.3.2}% 
+\contentsline {subsubsection}{\numberline {4.2.3.3}atualizaMotor()}{12}{subsubsection.4.2.3.3}% 
+\contentsline {subsubsection}{\numberline {4.2.3.4}atualizaPID()}{12}{subsubsection.4.2.3.4}% 
+\contentsline {subsubsection}{\numberline {4.2.3.5}desligar()}{12}{subsubsection.4.2.3.5}% 
+\contentsline {subsubsection}{\numberline {4.2.3.6}irPara()}{12}{subsubsection.4.2.3.6}% 
+\contentsline {subsubsection}{\numberline {4.2.3.7}leitura()}{13}{subsubsection.4.2.3.7}% 
+\contentsline {subsubsection}{\numberline {4.2.3.8}ligar()}{13}{subsubsection.4.2.3.8}% 
+\contentsline {subsubsection}{\numberline {4.2.3.9}pousar()}{13}{subsubsection.4.2.3.9}% 
+\contentsline {subsubsection}{\numberline {4.2.3.10}setMotor()}{13}{subsubsection.4.2.3.10}% 
+\contentsline {subsection}{\numberline {4.2.4}Documenta\IeC {\c c}\IeC {\~a}o dos dados membro}{14}{subsection.4.2.4}% 
+\contentsline {subsubsection}{\numberline {4.2.4.1}controle}{14}{subsubsection.4.2.4.1}% 
+\contentsline {subsubsection}{\numberline {4.2.4.2}inercial}{14}{subsubsection.4.2.4.2}% 
+\contentsline {subsubsection}{\numberline {4.2.4.3}motor}{14}{subsubsection.4.2.4.3}% 
+\contentsline {subsubsection}{\numberline {4.2.4.4}pidPitch}{14}{subsubsection.4.2.4.4}% 
+\contentsline {subsubsection}{\numberline {4.2.4.5}registro}{14}{subsubsection.4.2.4.5}% 
+\contentsline {subsubsection}{\numberline {4.2.4.6}varPIDPitch}{14}{subsubsection.4.2.4.6}% 
+\contentsline {subsubsection}{\numberline {4.2.4.7}voltimetro}{15}{subsubsection.4.2.4.7}% 
+\contentsline {section}{\numberline {4.3}Inercial}{15}{section.4.3}% 
+\contentsline {subsection}{\numberline {4.3.1}Descri\IeC {\c c}\IeC {\~a}o detalhada}{16}{subsection.4.3.1}% 
+\contentsline {subsection}{\numberline {4.3.2}Documenta\IeC {\c c}\IeC {\~a}o dos Construtores \& Destrutor}{16}{subsection.4.3.2}% 
+\contentsline {subsubsection}{\numberline {4.3.2.1}Inercial()}{16}{subsubsection.4.3.2.1}% 
+\contentsline {subsection}{\numberline {4.3.3}Documenta\IeC {\c c}\IeC {\~a}o dos m\IeC {\'e}todos}{16}{subsection.4.3.3}% 
+\contentsline {subsubsection}{\numberline {4.3.3.1}getPitch()}{16}{subsubsection.4.3.3.1}% 
+\contentsline {subsubsection}{\numberline {4.3.3.2}getRoll()}{17}{subsubsection.4.3.3.2}% 
+\contentsline {subsubsection}{\numberline {4.3.3.3}getYaw()}{17}{subsubsection.4.3.3.3}% 
+\contentsline {subsubsection}{\numberline {4.3.3.4}leitura()}{17}{subsubsection.4.3.3.4}% 
+\contentsline {subsection}{\numberline {4.3.4}Documenta\IeC {\c c}\IeC {\~a}o das classes amigas e fun\IeC {\c c}\IeC {\~o}es relacionadas}{17}{subsection.4.3.4}% 
+\contentsline {subsubsection}{\numberline {4.3.4.1}Registro}{17}{subsubsection.4.3.4.1}% 
+\contentsline {subsection}{\numberline {4.3.5}Documenta\IeC {\c c}\IeC {\~a}o dos dados membro}{17}{subsection.4.3.5}% 
+\contentsline {subsubsection}{\numberline {4.3.5.1}filtroPitch}{18}{subsubsection.4.3.5.1}% 
+\contentsline {subsubsection}{\numberline {4.3.5.2}filtroRoll}{18}{subsubsection.4.3.5.2}% 
+\contentsline {subsubsection}{\numberline {4.3.5.3}filtroYaw}{18}{subsubsection.4.3.5.3}% 
+\contentsline {subsubsection}{\numberline {4.3.5.4}pitch}{18}{subsubsection.4.3.5.4}% 
+\contentsline {subsubsection}{\numberline {4.3.5.5}roll}{18}{subsubsection.4.3.5.5}% 
+\contentsline {subsubsection}{\numberline {4.3.5.6}yaw}{18}{subsubsection.4.3.5.6}% 
+\contentsline {section}{\numberline {4.4}Motor}{19}{section.4.4}% 
+\contentsline {subsection}{\numberline {4.4.1}Descri\IeC {\c c}\IeC {\~a}o detalhada}{19}{subsection.4.4.1}% 
+\contentsline {subsection}{\numberline {4.4.2}Documenta\IeC {\c c}\IeC {\~a}o dos Construtores \& Destrutor}{19}{subsection.4.4.2}% 
+\contentsline {subsubsection}{\numberline {4.4.2.1}Motor()}{20}{subsubsection.4.4.2.1}% 
+\contentsline {subsection}{\numberline {4.4.3}Documenta\IeC {\c c}\IeC {\~a}o dos m\IeC {\'e}todos}{20}{subsection.4.4.3}% 
+\contentsline {subsubsection}{\numberline {4.4.3.1}desligar()}{20}{subsubsection.4.4.3.1}% 
+\contentsline {subsubsection}{\numberline {4.4.3.2}girar()\hspace {0.1cm}{\relax \fontsize {8}{9.5}\selectfont \abovedisplayskip 6\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 3\p@ plus\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip \ttfamily [1/2]}}{20}{subsubsection.4.4.3.2}% 
+\contentsline {subsubsection}{\numberline {4.4.3.3}girar()\hspace {0.1cm}{\relax \fontsize {8}{9.5}\selectfont \abovedisplayskip 6\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 3\p@ plus\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 3\p@ plus\p@ minus\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip \ttfamily [2/2]}}{20}{subsubsection.4.4.3.3}% 
+\contentsline {subsubsection}{\numberline {4.4.3.4}ligar()}{20}{subsubsection.4.4.3.4}% 
+\contentsline {subsubsection}{\numberline {4.4.3.5}setMinimo()}{21}{subsubsection.4.4.3.5}% 
+\contentsline {subsection}{\numberline {4.4.4}Documenta\IeC {\c c}\IeC {\~a}o das classes amigas e fun\IeC {\c c}\IeC {\~o}es relacionadas}{21}{subsection.4.4.4}% 
+\contentsline {subsubsection}{\numberline {4.4.4.1}Registro}{21}{subsubsection.4.4.4.1}% 
+\contentsline {subsection}{\numberline {4.4.5}Documenta\IeC {\c c}\IeC {\~a}o dos dados membro}{21}{subsection.4.4.5}% 
+\contentsline {subsubsection}{\numberline {4.4.5.1}minimo}{21}{subsubsection.4.4.5.1}% 
+\contentsline {subsubsection}{\numberline {4.4.5.2}velocidade}{21}{subsubsection.4.4.5.2}% 
+\contentsline {section}{\numberline {4.5}Passa\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Baixa}{22}{section.4.5}% 
+\contentsline {subsection}{\numberline {4.5.1}Descri\IeC {\c c}\IeC {\~a}o detalhada}{22}{subsection.4.5.1}% 
+\contentsline {subsection}{\numberline {4.5.2}Documenta\IeC {\c c}\IeC {\~a}o dos Construtores \& Destrutor}{22}{subsection.4.5.2}% 
+\contentsline {subsubsection}{\numberline {4.5.2.1}PassaBaixa()}{23}{subsubsection.4.5.2.1}% 
+\contentsline {subsection}{\numberline {4.5.3}Documenta\IeC {\c c}\IeC {\~a}o dos m\IeC {\'e}todos}{23}{subsection.4.5.3}% 
+\contentsline {subsubsection}{\numberline {4.5.3.1}calculaConstante()}{23}{subsubsection.4.5.3.1}% 
+\contentsline {subsubsection}{\numberline {4.5.3.2}entrar()}{23}{subsubsection.4.5.3.2}% 
+\contentsline {subsubsection}{\numberline {4.5.3.3}sair()}{23}{subsubsection.4.5.3.3}% 
+\contentsline {subsubsection}{\numberline {4.5.3.4}setAmostragem()}{24}{subsubsection.4.5.3.4}% 
+\contentsline {subsubsection}{\numberline {4.5.3.5}setFrequencia()}{24}{subsubsection.4.5.3.5}% 
+\contentsline {subsection}{\numberline {4.5.4}Documenta\IeC {\c c}\IeC {\~a}o dos dados membro}{24}{subsection.4.5.4}% 
+\contentsline {subsubsection}{\numberline {4.5.4.1}amostragem}{24}{subsubsection.4.5.4.1}% 
+\contentsline {subsubsection}{\numberline {4.5.4.2}constante}{24}{subsubsection.4.5.4.2}% 
+\contentsline {subsubsection}{\numberline {4.5.4.3}freqCorte}{25}{subsubsection.4.5.4.3}% 
+\contentsline {subsubsection}{\numberline {4.5.4.4}saida}{25}{subsubsection.4.5.4.4}% 
+\contentsline {subsubsection}{\numberline {4.5.4.5}saidaAnt}{25}{subsubsection.4.5.4.5}% 
+\contentsline {section}{\numberline {4.6}Registro}{25}{section.4.6}% 
+\contentsline {subsection}{\numberline {4.6.1}Descri\IeC {\c c}\IeC {\~a}o detalhada}{26}{subsection.4.6.1}% 
+\contentsline {subsection}{\numberline {4.6.2}Documenta\IeC {\c c}\IeC {\~a}o dos Construtores \& Destrutor}{26}{subsection.4.6.2}% 
+\contentsline {subsubsection}{\numberline {4.6.2.1}Registro()}{26}{subsubsection.4.6.2.1}% 
+\contentsline {subsection}{\numberline {4.6.3}Documenta\IeC {\c c}\IeC {\~a}o dos m\IeC {\'e}todos}{27}{subsection.4.6.3}% 
+\contentsline {subsubsection}{\numberline {4.6.3.1}print()}{27}{subsubsection.4.6.3.1}% 
+\contentsline {subsubsection}{\numberline {4.6.3.2}printAngulo()}{27}{subsubsection.4.6.3.2}% 
+\contentsline {subsubsection}{\numberline {4.6.3.3}printPID()}{27}{subsubsection.4.6.3.3}% 
+\contentsline {subsubsection}{\numberline {4.6.3.4}printTensao()}{27}{subsubsection.4.6.3.4}% 
+\contentsline {subsubsection}{\numberline {4.6.3.5}printVelocidade()}{27}{subsubsection.4.6.3.5}% 
+\contentsline {subsubsection}{\numberline {4.6.3.6}setAngulo()}{27}{subsubsection.4.6.3.6}% 
+\contentsline {subsubsection}{\numberline {4.6.3.7}setTensao()}{28}{subsubsection.4.6.3.7}% 
+\contentsline {subsubsection}{\numberline {4.6.3.8}setVelocidade()}{28}{subsubsection.4.6.3.8}% 
+\contentsline {subsection}{\numberline {4.6.4}Documenta\IeC {\c c}\IeC {\~a}o dos dados membro}{28}{subsection.4.6.4}% 
+\contentsline {subsubsection}{\numberline {4.6.4.1}controle}{29}{subsubsection.4.6.4.1}% 
+\contentsline {subsubsection}{\numberline {4.6.4.2}imprimeAngulo}{29}{subsubsection.4.6.4.2}% 
+\contentsline {subsubsection}{\numberline {4.6.4.3}imprimePID}{29}{subsubsection.4.6.4.3}% 
+\contentsline {subsubsection}{\numberline {4.6.4.4}imprimeVelocidade}{29}{subsubsection.4.6.4.4}% 
+\contentsline {subsubsection}{\numberline {4.6.4.5}pitch}{29}{subsubsection.4.6.4.5}% 
+\contentsline {subsubsection}{\numberline {4.6.4.6}roll}{29}{subsubsection.4.6.4.6}% 
+\contentsline {subsubsection}{\numberline {4.6.4.7}tensao}{30}{subsubsection.4.6.4.7}% 
+\contentsline {subsubsection}{\numberline {4.6.4.8}vel0}{30}{subsubsection.4.6.4.8}% 
+\contentsline {subsubsection}{\numberline {4.6.4.9}vel1}{30}{subsubsection.4.6.4.9}% 
+\contentsline {subsubsection}{\numberline {4.6.4.10}vel2}{30}{subsubsection.4.6.4.10}% 
+\contentsline {subsubsection}{\numberline {4.6.4.11}vel3}{30}{subsubsection.4.6.4.11}% 
+\contentsline {subsubsection}{\numberline {4.6.4.12}yaw}{30}{subsubsection.4.6.4.12}% 
+\contentsline {section}{\numberline {4.7}Variaveis\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}P\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}ID}{31}{section.4.7}% 
+\contentsline {subsection}{\numberline {4.7.1}Descri\IeC {\c c}\IeC {\~a}o detalhada}{31}{subsection.4.7.1}% 
+\contentsline {subsection}{\numberline {4.7.2}Documenta\IeC {\c c}\IeC {\~a}o dos dados membro}{31}{subsection.4.7.2}% 
+\contentsline {subsubsection}{\numberline {4.7.2.1}entrada}{31}{subsubsection.4.7.2.1}% 
+\contentsline {subsubsection}{\numberline {4.7.2.2}kd}{31}{subsubsection.4.7.2.2}% 
+\contentsline {subsubsection}{\numberline {4.7.2.3}ki}{32}{subsubsection.4.7.2.3}% 
+\contentsline {subsubsection}{\numberline {4.7.2.4}kp}{32}{subsubsection.4.7.2.4}% 
+\contentsline {subsubsection}{\numberline {4.7.2.5}saida}{32}{subsubsection.4.7.2.5}% 
+\contentsline {subsubsection}{\numberline {4.7.2.6}setPoint}{32}{subsubsection.4.7.2.6}% 
+\contentsline {section}{\numberline {4.8}Voltimetro}{32}{section.4.8}% 
+\contentsline {subsection}{\numberline {4.8.1}Descri\IeC {\c c}\IeC {\~a}o detalhada}{33}{subsection.4.8.1}% 
+\contentsline {subsection}{\numberline {4.8.2}Documenta\IeC {\c c}\IeC {\~a}o dos Construtores \& Destrutor}{33}{subsection.4.8.2}% 
+\contentsline {subsubsection}{\numberline {4.8.2.1}Voltimetro()}{33}{subsubsection.4.8.2.1}% 
+\contentsline {subsection}{\numberline {4.8.3}Documenta\IeC {\c c}\IeC {\~a}o dos m\IeC {\'e}todos}{33}{subsection.4.8.3}% 
+\contentsline {subsubsection}{\numberline {4.8.3.1}leitura()}{33}{subsubsection.4.8.3.1}% 
+\contentsline {subsubsection}{\numberline {4.8.3.2}setPorta()}{33}{subsubsection.4.8.3.2}% 
+\contentsline {subsection}{\numberline {4.8.4}Documenta\IeC {\c c}\IeC {\~a}o das classes amigas e fun\IeC {\c c}\IeC {\~o}es relacionadas}{34}{subsection.4.8.4}% 
+\contentsline {subsubsection}{\numberline {4.8.4.1}Registro}{34}{subsubsection.4.8.4.1}% 
+\contentsline {subsection}{\numberline {4.8.5}Documenta\IeC {\c c}\IeC {\~a}o dos dados membro}{34}{subsection.4.8.5}% 
+\contentsline {subsubsection}{\numberline {4.8.5.1}porta}{34}{subsubsection.4.8.5.1}% 
+\contentsline {subsubsection}{\numberline {4.8.5.2}tensao}{34}{subsubsection.4.8.5.2}% 
+\contentsline {chapter}{\numberline {5}Documenta\IeC {\c c}\IeC {\~a}o do ficheiro}{35}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}Refer\IeC {\^e}ncia ao ficheiro 1Classe.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}ino}{35}{section.5.1}% 
+\contentsline {section}{\numberline {5.2}Refer\IeC {\^e}ncia ao ficheiro 2Variaveis.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}ino}{35}{section.5.2}% 
+\contentsline {section}{\numberline {5.3}Refer\IeC {\^e}ncia ao ficheiro 3Funcoes.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}ino}{35}{section.5.3}% 
+\contentsline {section}{\numberline {5.4}Refer\IeC {\^e}ncia ao ficheiro 4Setup\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Loop.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}ino}{35}{section.5.4}% 
+\contentsline {subsection}{\numberline {5.4.1}Documenta\IeC {\c c}\IeC {\~a}o das fun\IeC {\c c}\IeC {\~o}es}{36}{subsection.5.4.1}% 
+\contentsline {subsubsection}{\numberline {5.4.1.1}loop()}{36}{subsubsection.5.4.1.1}% 
+\contentsline {subsubsection}{\numberline {5.4.1.2}setup()}{36}{subsubsection.5.4.1.2}% 
+\contentsline {section}{\numberline {5.5}Refer\IeC {\^e}ncia ao ficheiro Novo\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Drone.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}ino}{36}{section.5.5}% 
+\contentsline {subsection}{\numberline {5.5.1}Documenta\IeC {\c c}\IeC {\~a}o das macros}{36}{subsection.5.5.1}% 
+\contentsline {subsubsection}{\numberline {5.5.1.1}imprimeSensor}{37}{subsubsection.5.5.1.1}% 
+\contentsline {subsubsection}{\numberline {5.5.1.2}KDpitch}{37}{subsubsection.5.5.1.2}% 
+\contentsline {subsubsection}{\numberline {5.5.1.3}KIpitch}{37}{subsubsection.5.5.1.3}% 
+\contentsline {subsubsection}{\numberline {5.5.1.4}KPpitch}{37}{subsubsection.5.5.1.4}% 
+\contentsline {subsubsection}{\numberline {5.5.1.5}LIGA}{37}{subsubsection.5.5.1.5}% 
+\contentsline {subsubsection}{\numberline {5.5.1.6}outputLIMIT}{37}{subsubsection.5.5.1.6}% 
+\contentsline {subsubsection}{\numberline {5.5.1.7}QUANT\_MOTOR}{38}{subsubsection.5.5.1.7}% 
+\contentsline {subsubsection}{\numberline {5.5.1.8}RODA}{38}{subsubsection.5.5.1.8}% 
+\contentsline {subsubsection}{\numberline {5.5.1.9}serial}{38}{subsubsection.5.5.1.9}% 
+\contentsline {subsubsection}{\numberline {5.5.1.10}VOO}{38}{subsubsection.5.5.1.10}% 
+\contentsline {chapter}{\'Indice}{39}{section*.27}% 

@@ -9,9 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="search/searchdata.js"></script>
-<script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -20,9 +17,11 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Logo - GER.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Documentação do Drone
    </div>
+   <div id="projectbrief">It&#39;s dangerous go alone, take this with you</div>
   </td>
  </tr>
  </tbody>
@@ -30,35 +29,15 @@
 </div>
 <!-- end header part -->
 <!-- Gerado por Doxygen 1.8.16 -->
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
-/* @license-end */
-</script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
-  initMenu('',true,false,'search.php','Localizar');
-  $(document).ready(function() { init_search(); });
+  initMenu('',false,false,'search.php','Localizar');
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-</div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
 </div><!-- top -->
 <div class="header">
   <div class="summary">
@@ -71,7 +50,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Implementa um volt�metro conectado a uma porta anal�gica do Arduino  
+<p>Implementa um voltímetro conectado a uma porta analógica do Arduino  
  <a href="classVoltimetro.html#details">Mais...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -80,7 +59,7 @@ Membros públicos</h2></td></tr>
 <tr class="memdesc:ae5c81dfba1c87ce95c704c301a4995ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor da classe  <a href="classVoltimetro_ae5c81dfba1c87ce95c704c301a4995ca.html#ae5c81dfba1c87ce95c704c301a4995ca">Mais...</a><br /></td></tr>
 <tr class="separator:ae5c81dfba1c87ce95c704c301a4995ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa542593e23527970698c8ecccfa393d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVoltimetro_aaa542593e23527970698c8ecccfa393d.html#aaa542593e23527970698c8ecccfa393d">leitura</a> ()</td></tr>
-<tr class="memdesc:aaa542593e23527970698c8ecccfa393d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Efetua a leitura anal�gica e a converte para a tens�o em [V]  <a href="classVoltimetro_aaa542593e23527970698c8ecccfa393d.html#aaa542593e23527970698c8ecccfa393d">Mais...</a><br /></td></tr>
+<tr class="memdesc:aaa542593e23527970698c8ecccfa393d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Efetua a leitura analógica e a converte para a tensão em [V]  <a href="classVoltimetro_aaa542593e23527970698c8ecccfa393d.html#aaa542593e23527970698c8ecccfa393d">Mais...</a><br /></td></tr>
 <tr class="separator:aaa542593e23527970698c8ecccfa393d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ad60d111e56e8b4f99204edcbfbdc12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVoltimetro_a3ad60d111e56e8b4f99204edcbfbdc12.html#a3ad60d111e56e8b4f99204edcbfbdc12">setPorta</a> (int <a class="el" href="classVoltimetro_a7f40325aaddc75ec8e13cdd34400047d.html#a7f40325aaddc75ec8e13cdd34400047d">porta</a>)</td></tr>
 <tr class="memdesc:a3ad60d111e56e8b4f99204edcbfbdc12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a porta de leitura  <a href="classVoltimetro_a3ad60d111e56e8b4f99204edcbfbdc12.html#a3ad60d111e56e8b4f99204edcbfbdc12">Mais...</a><br /></td></tr>
@@ -100,10 +79,10 @@ Amigos</h2></td></tr>
 <tr class="separator:a9205444021fc8aa87162996750e6f6af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
-<div class="textblock"><p>Implementa um volt�metro conectado a uma porta anal�gica do Arduino </p>
+<div class="textblock"><p>Implementa um voltímetro conectado a uma porta analógica do Arduino </p>
 <p>Elton, 14/08/2019. </p>
 </div><hr/>A documentação para esta classe foi gerada a partir do seguinte ficheiro:<ul>
-<li>C:/Users/Elton/source/Repos/ger-unicamp/Drone/NovoDrone/NovoDrone/<a class="el" href="1Classe_8ino.html">1Classe.ino</a></li>
+<li><a class="el" href="1Classe_8ino.html">1Classe.ino</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

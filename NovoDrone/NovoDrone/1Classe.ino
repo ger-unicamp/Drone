@@ -1,4 +1,4 @@
-/// <summary> Realiza o controle de um motor </summary>
+Ôªø/// <summary> Realiza o controle de um motor </summary>
 /// <remarks> Elton, 14/08/2019. </remarks>
 class Motor : Servo		
 {
@@ -14,7 +14,7 @@ class Motor : Servo
 
 		/// <summary> Define a velocidade do motor </summary>
 		/// <remarks> Elton, 14/08/2019. </remarks>
-		/// <param name="diferenca">Quanto acima do mÌnimo para girar o motor dever· girar</param>
+		/// <param name="diferenca">Quanto acima do m√≠nimo para girar o motor dever√° girar</param>
 		void girar(int diferenca)
 		{
 			write(minimo + diferenca);
@@ -22,9 +22,9 @@ class Motor : Servo
 			velocidade = minimo + diferenca;
 		}
 
-		/// <summary> Define o valor mÌnimo de velocidade para o motor girar </summary>
+		/// <summary> Define o valor m√≠nimo de velocidade para o motor girar </summary>
 		/// <remarks> Elton, 14/08/2019. </remarks>
-		/// <param name="minimo"> Valor mÌnimo definido </param>
+		/// <param name="minimo"> Valor m√≠nimo definido </param>
 		void setMinimo(int minimo)
 		{
 			this->minimo = minimo;
@@ -37,14 +37,14 @@ class Motor : Servo
 			write(17);
 		}
 
-		/// <summary> Inicia a rotaÁ„o do motor, imprimindo o mÌnimo para girar </summary>
+		/// <summary> Inicia a rota√ß√£o do motor, imprimindo o m√≠nimo para girar </summary>
 		/// <remarks> Elton, 14/08/2019. </remarks>
 		void girar()
 		{
 			write(31);
 		}
 
-		/// <summary> Desliga o motor, encerrando a rotaÁ„o </summary>
+		/// <summary> Desliga o motor, encerrando a rota√ß√£o </summary>
 		/// <remarks> Elton, 14/08/2019. </remarks>
 		void desligar()
 		{
@@ -60,23 +60,23 @@ class Motor : Servo
 	protected:
 		friend class Registro;
 
-		int minimo, /// <value> A velocidade mÌnima para rotaÁ„o do motor </value>
+		int minimo, /// <value> A velocidade m√≠nima para rota√ß√£o do motor </value>
 			velocidade; /// <value> A velocidade atual do motor </value>
 
 };
 
-/// <summary> Implementa um filtro de frequÍncia do tipo "passa baixa"</summary>
+/// <summary> Implementa um filtro de frequ√™ncia do tipo "passa baixa"</summary>
 /// <remarks>	Elton, 14/08/2019. </remarks>
 class PassaBaixa
 {
 	protected:
-		float saidaAnt, /// <value> ⁄ltima saÌda do filtro </value>
+		float saidaAnt, /// <value> √öltima sa√≠da do filtro </value>
 			constante, /// <value> Constante do filtro </value>
-			saida, /// <value> SaÌda atual do filtro </value>
-			freqCorte, /// <value> FrequÍncia de corte do filtro em [rad/s] </value>
+			saida, /// <value> Sa√≠da atual do filtro </value>
+			freqCorte, /// <value> Frequ√™ncia de corte do filtro em [rad/s] </value>
 			amostragem; /// <value> Amostragem do sinal </value>
 
-		/// <summary> Calcula a constante utilizada no c·lculo do filtro. </summary>
+		/// <summary> Calcula a constante utilizada no c√°lculo do filtro. </summary>
 		/// <remarks>	Elton, 14/08/2019. </remarks>
 		void calculaConstante() //Calcula a constante (alpha) do filtro
 		{
@@ -101,13 +101,13 @@ class PassaBaixa
 		/// <summary> Insere uma nova medida no </summary>
 		/// <remarks> Elton, 14/08/2019. </remarks>
 		/// <param name="medida"> A nova medida </param>
-		void entrar(float medida) //Insere uma nova leitura no filtro e calcula a saÌda
+		void entrar(float medida) //Insere uma nova leitura no filtro e calcula a sa√≠da
 		{
 			saida = (constante * medida) + ((1 + constante) * saidaAnt);
 			saidaAnt = saida;
 		}
 
-		/// <summary> Retorna o ˙ltimo valor calculado pelo filtro </summary>
+		/// <summary> Retorna o √∫ltimo valor calculado pelo filtro </summary>
 		/// <remarks> Elton, 14/08/2019. </remarks>
 		/// <returns> O valor filtrado </returns>
 		float sair() //Retorna o valor filtrado
@@ -115,10 +115,10 @@ class PassaBaixa
 			return -saida;
 		}
 
-		/// <summary> Define a frequÍncia de corte do filtro. </summary>
+		/// <summary> Define a frequ√™ncia de corte do filtro. </summary>
 		/// <remarks> Elton, 14/08/2019. </remarks>
-		/// <param name="freqCorte"> A frequÍncia definida. </param>
-		void setFrequencia(float freqCorte) //Altera a frequÍncia de corte
+		/// <param name="freqCorte"> A frequ√™ncia definida. </param>
+		void setFrequencia(float freqCorte) //Altera a frequ√™ncia de corte
 		{
 			this->freqCorte = freqCorte;
 			calculaConstante();
@@ -193,15 +193,15 @@ class Inercial : MPU6050
 	protected:
 		friend class Registro;
 
-		float roll, /// <value> ⁄ltimo valor lido e filtrado no eixo roll. </value> 
-			  pitch, /// <value> ⁄ltimo valor lido e filtrado no eixo roll. </value> 
-			  yaw; /// <value> ⁄ltimo valor lido e filtrado no eixo roll. </value>
+		float roll, /// <value> √öltimo valor lido e filtrado no eixo roll. </value> 
+			  pitch, /// <value> √öltimo valor lido e filtrado no eixo roll. </value> 
+			  yaw; /// <value> √öltimo valor lido e filtrado no eixo roll. </value>
 		PassaBaixa filtroRoll, /// <value> Filtro passa baixa para o eixo Roll. </value>
 				   filtroPitch, /// <value> Filtro passa baixa para o eixo Pitch. </value>
 				   filtroYaw; /// <value> Filtro passa baixa para o eixo Yaw. </value>
 };
 
-/// <summary> Implementa um voltÌmetro conectado a uma porta analÛgica do Arduino </summary>
+/// <summary> Implementa um volt√≠metro conectado a uma porta anal√≥gica do Arduino </summary>
 /// <remarks>	Elton, 14/08/2019. </remarks>
 class Voltimetro
 {
@@ -221,9 +221,9 @@ class Voltimetro
 			this->porta = porta;
 		}
 
-		/// <summary> Efetua a leitura analÛgica e a converte para a tens„o em [V] </summary>
+		/// <summary> Efetua a leitura anal√≥gica e a converte para a tens√£o em [V] </summary>
 		/// <remarks> Elton, 14/08/2019. </remarks>
-		/// <returns> Tens„o lida </returns>
+		/// <returns> Tens√£o lida </returns>
 		int leitura()
 		{
 			tensao = float(analogRead(porta)) / 67.2727;
@@ -235,7 +235,7 @@ class Voltimetro
 		friend class Registro;
 
 		int porta; /// <value> Porta de leitura. </value>
-		float tensao; /// <value> ⁄ltimo valor de tens„o lido. </value>
+		float tensao; /// <value> √öltimo valor de tens√£o lido. </value>
 };
 
 
@@ -251,12 +251,12 @@ class ControleSerial
 		{
 		}
 
-		/// <summary> Inicia a comunicaÁ„o serial na porta desejada. </summary>
+		/// <summary> Inicia a comunica√ß√£o serial na porta desejada. </summary>
 		/// <remarks> Elton, 14/08/2019. </remarks>
 		/// <param name="uso"> 
 		/// <para> Porta desejada: </para>
-		/// <para> 0 = Padr„o do Arduino </para>
-		/// <para> 1 = Porta definada pelo usu·rio </para> 
+		/// <para> 0 = Padr√£o do Arduino; </para>
+		/// <para> 1 = Porta definada pelo usu√°rio </para> 
 		///	</param>
 		void iniciar(int uso)
 		{
@@ -328,13 +328,13 @@ class ControleSerial
 
 	protected:
 
-		/// <value> Ponteiro para o objeto serial definido pelo usu·rio. </value>
+		/// <value> Ponteiro para o objeto serial definido pelo usu√°rio. </value>
 		SoftwareSerial *serial2;
 
 		/// <value>	
-		/// <para> ContÈm o Ìndice da porta sendo usada. </para>
-		/// <para> 0 = Padr„o do Arduino </para>
-		/// <para> 1 = Porta definada pelo usu·rio </para>
+		/// <para> Cont√©m o √≠ndice da porta sendo usada. </para>
+		/// <para> 0 = Padr√£o do Arduino </para>
+		/// <para> 1 = Porta definada pelo usu√°rio </para>
 		///	</value>
 		int usando;
 };
@@ -357,19 +357,19 @@ class Registro
 			imprimePID = false;
 		}
 
-		/// <summary> Define o endereÁo para o valor de tens„o. </summary>
+		/// <summary> Define o endere√ßo para o valor de tens√£o. </summary>
 		/// <remarks> Elton, 14/08/2019. </remarks>
-		/// <param name="tensao"> Ponteiro para a vari·vel que contÈm a tens„o lida. </param>
+		/// <param name="tensao"> Ponteiro para a vari√°vel que cont√©m a tens√£o lida. </param>
 		void setTensao(float *tensao)
 		{
 			this->tensao == tensao;
 		}
 
-		/// <summary> Define os endereÁos para as posiÁıes ‚ngulares do robÙ. </summary>
+		/// <summary> Define os endere√ßos para as posi√ß√µes √¢ngulares do rob√¥. </summary>
 		/// <remarks> Elton, 14/08/2019. </remarks>
-		/// <param name="roll"> Ponteiro para a vari·vel que contÈm a leitura do eixo "roll". </param>
-		/// <param name="pitch"> Ponteiro para a vari·vel que contÈm a leitura do eixo "pitch". </param>
-		/// <param name="yaw"> Ponteiro para a vari·vel que contÈm a leitura do eixo "yaw".</param>
+		/// <param name="roll"> Ponteiro para a vari√°vel que cont√©m a leitura do eixo "roll". </param>
+		/// <param name="pitch"> Ponteiro para a vari√°vel que cont√©m a leitura do eixo "pitch". </param>
+		/// <param name="yaw"> Ponteiro para a vari√°vel que cont√©m a leitura do eixo "yaw".</param>
 		void setAngulo(float *roll, float *pitch, float *yaw)
 		{
 			this->roll = roll;
@@ -377,12 +377,12 @@ class Registro
 			this->yaw = yaw;
 		}
 
-		/// <summary> Define os endereÁos para as velocidades dos motores do robÙ. </summary>
+		/// <summary> Define os endere√ßos para as velocidades dos motores do rob√¥. </summary>
 		/// <remarks> Elton, 14/08/2019. </remarks>
-		/// <param name="vel0"> Ponteiro para a vari·vel que contÈm a leitura do motor 0. </param>
-		/// <param name="vel1">	Ponteiro para a vari·vel que contÈm a leitura do motor 1. </param>
-		/// <param name="vel2">	Ponteiro para a vari·vel que contÈm a leitura do motor 2. </param>
-		/// <param name="vel3">	Ponteiro para a vari·vel que contÈm a leitura do motor 3. </param>
+		/// <param name="vel0"> Ponteiro para a vari√°vel que cont√©m a leitura do motor 0. </param>
+		/// <param name="vel1">	Ponteiro para a vari√°vel que cont√©m a leitura do motor 1. </param>
+		/// <param name="vel2">	Ponteiro para a vari√°vel que cont√©m a leitura do motor 2. </param>
+		/// <param name="vel3">	Ponteiro para a vari√°vel que cont√©m a leitura do motor 3. </param>
 		void setVelocidade(float *vel0, float *vel1, float *vel2, float *vel3)
 		{
 			this->vel0 = vel0;
@@ -418,20 +418,20 @@ class Registro
 	protected:
 
 		ControleSerial *controle; /// <value> Ponteiro para o objeto "ControleSerial" para o envio de dados. </value>
-		float *tensao, /// <value> Ponteiro para o endereÁo da vari·vel com o valor de tens„o. </value>
-			*roll, /// <value> Ponteiro para o endereÁo da vari·vel com o valor de inclinaÁ„o no eixo roll. </value>
-			*pitch, /// <value>	Ponteiro para o endereÁo da vari·vel com o valor de inclinaÁ„o no eixo pitch. </value>
-			*yaw, /// <value> Ponteiro para o endereÁo da vari·vel com o valor de inclinaÁ„o no eixo yaw. </value>
-			*vel0, /// <value> Ponteiro para o endereÁo da vari·vel com a velocidade do motor 0. </value>
-			*vel1, /// <value> Ponteiro para o endereÁo da vari·vel com a velocidade do motor 1. </value>
-			*vel2, /// <value> Ponteiro para o endereÁo da vari·vel com a velocidade do motor 2. </value>
-			*vel3; /// <value> Ponteiro para o endereÁo da vari·vel com a velocidade do motor 3. </value>
+		float *tensao, /// <value> Ponteiro para o endere√ßo da vari√°vel com o valor de tens√£o. </value>
+			*roll, /// <value> Ponteiro para o endere√ßo da vari√°vel com o valor de inclina√ß√£o no eixo roll. </value>
+			*pitch, /// <value>	Ponteiro para o endere√ßo da vari√°vel com o valor de inclina√ß√£o no eixo pitch. </value>
+			*yaw, /// <value> Ponteiro para o endere√ßo da vari√°vel com o valor de inclina√ß√£o no eixo yaw. </value>
+			*vel0, /// <value> Ponteiro para o endere√ßo da vari√°vel com a velocidade do motor 0. </value>
+			*vel1, /// <value> Ponteiro para o endere√ßo da vari√°vel com a velocidade do motor 1. </value>
+			*vel2, /// <value> Ponteiro para o endere√ßo da vari√°vel com a velocidade do motor 2. </value>
+			*vel3; /// <value> Ponteiro para o endere√ßo da vari√°vel com a velocidade do motor 3. </value>
 
-		bool imprimeAngulo, /// <value> True = Deve imprimir as inclinaÁıes. </value>
+		bool imprimeAngulo, /// <value> True = Deve imprimir as inclina√ß√µes. </value>
 			imprimeVelocidade, /// <value> True = Deve imprimir as velocidades. </value>
 			imprimePID; /// <value> True = Deve imprimir os dados dos controladores PID. </value>
 
-		/// <summary> Imprime as inclinaÁıes. </summary>
+		/// <summary> Imprime as inclina√ß√µes. </summary>
 		/// <remarks> Elton, 14/08/2019. </remarks>
 		void printAngulo()
 		{
@@ -464,7 +464,7 @@ class Registro
 			controle->print(" ");
 		}
 
-		/// <summary> Imprime a tens„o. </summary>
+		/// <summary> Imprime a tens√£o. </summary>
 		/// <remarks> Elton, 14/08/2019. </remarks>
 		void printTensao()
 		{
@@ -473,7 +473,7 @@ class Registro
 			controle->print(" ");
 		}
 
-		/// <summary> Imprime as inclinaÁıes. </summary>
+		/// <summary> Imprime as inclina√ß√µes. </summary>
 		/// <remarks> Elton, 14/08/2019. </remarks>
 		void printPID()
 		{
@@ -486,8 +486,8 @@ class Registro
 /// <remarks> Elton, 14/08/2019. </remarks>
 struct VariaveisPID
 {
-	double entrada, /// <value> ⁄ltima entrada do PID. </value>
-		   saida, /// <value> ⁄ltima saÌda do PID. </value>
+	double entrada, /// <value> √öltima entrada do PID. </value>
+		   saida, /// <value> √öltima sa√≠da do PID. </value>
 		   setPoint, /// <value> SetPoint do PID. </value>
 		   kp, /// <value> Coeficiente proporcional do PID </value>
 		   ki, /// <value> Coeficiente integrativo do PID </value>
@@ -505,22 +505,22 @@ class Drone
 
 		/// <summary> Define a porta do motor. </summary>
 		/// <remarks> Elton, 14/08/2019. </remarks>
-		/// <param name="indice"> Õndice do motor a ser definido. </param>
+		/// <param name="indice"> √çndice do motor a ser definido. </param>
 		/// <param name="porta">  Porta desejada. </param>
 		void setMotor(int indice, int porta)
 		{
 			//motor[indice].attach(porta);
 		}
 
-		/// <summary> Define o ‚ngulo para o eixo pitch. </summary>
+		/// <summary> Define o √¢ngulo para o eixo pitch. </summary>
 		/// <remarks> Elton, 14/08/2019. </remarks>
-		/// <param name="angulo"> O ‚ngulo desejado em [∫]. </param>
+		/// <param name="angulo"> O √¢ngulo desejado em [¬∫]. </param>
 		void irPara(float angulo)
 		{
 			varPIDPitch.setPoint = angulo;
 		}
 
-		/// <summary> Atualiza os dados do drone e o matÈm na posiÁ„o desejada. </summary>
+		/// <summary> Atualiza os dados do drone e o mat√©m na posi√ß√£o desejada. </summary>
 		/// <remarks> Elton, 14/08/2019. </remarks>
 		void atualiza()
 		{
@@ -570,7 +570,7 @@ class Drone
 
 		/// <summary> Pousa o drone. </summary>
 		/// <remarks> 
-		/// <param> N√O IMPLEMENTADO. </param>
+		/// <param> N√ÉO IMPLEMENTADO. </param>
 		/// <param> Elton, 14/08/2019. </param>
 		/// </remarks>
 		void pousar()
@@ -579,14 +579,14 @@ class Drone
 		}
 
 	protected:
-		VariaveisPID varPIDPitch; /// <value> Vari·veis do PID para controle do eixo pitch </value>
+		VariaveisPID varPIDPitch; /// <value> Vari√°veis do PID para controle do eixo pitch </value>
 		
 		Inercial inercial; /// <value> Objeto para controle da IMU. </value>
-		PID pidPitch; /// <value> PID para controle da inclinaÁ„o no eixo pitch. </value>
+		PID pidPitch; /// <value> PID para controle da inclina√ß√£o no eixo pitch. </value>
 		Motor motor[4]; /// <value> Objetos para controle dos motores. </value>
 		Registro registro; /// <value> Objeto para log do drone. </value>
-		ControleSerial controle; /// <value> Objeto para controle da comunicaÁ„o do drone. </value>
-		Voltimetro voltimetro;/// <value> Objeto para leitura da tens„o da bateria </value>
+		ControleSerial controle; /// <value> Objeto para controle da comunica√ß√£o do drone. </value>
+		Voltimetro voltimetro;/// <value> Objeto para leitura da tens√£o da bateria </value>
 
 		/// <summary> Atualiza entradas dos PIDs. </summary>
 		/// <remarks> Elton, 14/08/2019. </remarks>

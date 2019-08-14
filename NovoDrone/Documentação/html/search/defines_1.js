@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['kd_180',['KD',['../NovoDrone_8ino_ad4f9673d16d231643789f081068d2372.html#ad4f9673d16d231643789f081068d2372',1,'NovoDrone.ino']]],
-  ['ki_181',['KI',['../NovoDrone_8ino_ade82752ae1652fdf0df9df7a16ffda29.html#ade82752ae1652fdf0df9df7a16ffda29',1,'NovoDrone.ino']]],
-  ['kp_182',['KP',['../NovoDrone_8ino_aa4729260b732666338dee7d841aa12f3.html#aa4729260b732666338dee7d841aa12f3',1,'NovoDrone.ino']]]
+  ['kdpitch_181',['KDpitch',['../NovoDrone_8ino_a4f68d3a7a63c34cb650fc042970005e5.html#a4f68d3a7a63c34cb650fc042970005e5',1,'NovoDrone.ino']]],
+  ['kipitch_182',['KIpitch',['../NovoDrone_8ino_a640231815e3b3a2a37f7313dea760e14.html#a640231815e3b3a2a37f7313dea760e14',1,'NovoDrone.ino']]],
+  ['kppitch_183',['KPpitch',['../NovoDrone_8ino_a8fa6f9ad15dac0a263ae161409ce19c5.html#a8fa6f9ad15dac0a263ae161409ce19c5',1,'NovoDrone.ino']]]
 ];

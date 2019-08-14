@@ -1,0 +1,352 @@
+\begin{theindex}
+
+  \item {1Classe.ino}, \hyperpage{35}
+  \item {2Variaveis.ino}, \hyperpage{35}
+  \item {3Funcoes.ino}, \hyperpage{35}
+  \item {4SetupLoop.ino}, \hyperpage{35}
+    \subitem {loop}, \hyperpage{36}
+    \subitem {setup}, \hyperpage{36}
+
+  \indexspace
+
+  \item {amostragem}
+    \subitem {PassaBaixa}, \hyperpage{24}
+  \item {atualiza}
+    \subitem {Drone}, \hyperpage{11}
+  \item {atualizaEntradas}
+    \subitem {Drone}, \hyperpage{12}
+  \item {atualizaMotor}
+    \subitem {Drone}, \hyperpage{12}
+  \item {atualizaPID}
+    \subitem {Drone}, \hyperpage{12}
+
+  \indexspace
+
+  \item {calculaConstante}
+    \subitem {PassaBaixa}, \hyperpage{23}
+  \item {constante}
+    \subitem {PassaBaixa}, \hyperpage{24}
+  \item {controle}
+    \subitem {Drone}, \hyperpage{14}
+    \subitem {Registro}, \hyperpage{28}
+  \item {ControleSerial}, \hyperpage{7}
+    \subitem {ControleSerial}, \hyperpage{8}
+    \subitem {iniciar}, \hyperpage{8}
+    \subitem {print}, \hyperpage{8}
+    \subitem {println}, \hyperpage{9}
+    \subitem {serial2}, \hyperpage{10}
+    \subitem {setSerial}, \hyperpage{9}
+    \subitem {usando}, \hyperpage{10}
+
+  \indexspace
+
+  \item {desligar}
+    \subitem {Drone}, \hyperpage{12}
+    \subitem {Motor}, \hyperpage{20}
+  \item {Drone}, \hyperpage{10}
+    \subitem {atualiza}, \hyperpage{11}
+    \subitem {atualizaEntradas}, \hyperpage{12}
+    \subitem {atualizaMotor}, \hyperpage{12}
+    \subitem {atualizaPID}, \hyperpage{12}
+    \subitem {controle}, \hyperpage{14}
+    \subitem {desligar}, \hyperpage{12}
+    \subitem {Drone}, \hyperpage{11}
+    \subitem {inercial}, \hyperpage{14}
+    \subitem {irPara}, \hyperpage{12}
+    \subitem {leitura}, \hyperpage{13}
+    \subitem {ligar}, \hyperpage{13}
+    \subitem {motor}, \hyperpage{14}
+    \subitem {pidPitch}, \hyperpage{14}
+    \subitem {pousar}, \hyperpage{13}
+    \subitem {registro}, \hyperpage{14}
+    \subitem {setMotor}, \hyperpage{13}
+    \subitem {varPIDPitch}, \hyperpage{14}
+    \subitem {voltimetro}, \hyperpage{14}
+
+  \indexspace
+
+  \item {entrada}
+    \subitem {VariaveisPID}, \hyperpage{31}
+  \item {entrar}
+    \subitem {PassaBaixa}, \hyperpage{23}
+
+  \indexspace
+
+  \item {filtroPitch}
+    \subitem {Inercial}, \hyperpage{17}
+  \item {filtroRoll}
+    \subitem {Inercial}, \hyperpage{18}
+  \item {filtroYaw}
+    \subitem {Inercial}, \hyperpage{18}
+  \item {freqCorte}
+    \subitem {PassaBaixa}, \hyperpage{24}
+
+  \indexspace
+
+  \item {getPitch}
+    \subitem {Inercial}, \hyperpage{16}
+  \item {getRoll}
+    \subitem {Inercial}, \hyperpage{16}
+  \item {getYaw}
+    \subitem {Inercial}, \hyperpage{17}
+  \item {girar}
+    \subitem {Motor}, \hyperpage{20}
+
+  \indexspace
+
+  \item {imprimeAngulo}
+    \subitem {Registro}, \hyperpage{29}
+  \item {imprimePID}
+    \subitem {Registro}, \hyperpage{29}
+  \item {imprimeSensor}
+    \subitem {NovoDrone.ino}, \hyperpage{36}
+  \item {imprimeVelocidade}
+    \subitem {Registro}, \hyperpage{29}
+  \item {Inercial}, \hyperpage{15}
+    \subitem {filtroPitch}, \hyperpage{17}
+    \subitem {filtroRoll}, \hyperpage{18}
+    \subitem {filtroYaw}, \hyperpage{18}
+    \subitem {getPitch}, \hyperpage{16}
+    \subitem {getRoll}, \hyperpage{16}
+    \subitem {getYaw}, \hyperpage{17}
+    \subitem {Inercial}, \hyperpage{16}
+    \subitem {leitura}, \hyperpage{17}
+    \subitem {pitch}, \hyperpage{18}
+    \subitem {Registro}, \hyperpage{17}
+    \subitem {roll}, \hyperpage{18}
+    \subitem {yaw}, \hyperpage{18}
+  \item {inercial}
+    \subitem {Drone}, \hyperpage{14}
+  \item {iniciar}
+    \subitem {ControleSerial}, \hyperpage{8}
+  \item {irPara}
+    \subitem {Drone}, \hyperpage{12}
+
+  \indexspace
+
+  \item {kd}
+    \subitem {VariaveisPID}, \hyperpage{31}
+  \item {KDpitch}
+    \subitem {NovoDrone.ino}, \hyperpage{37}
+  \item {ki}
+    \subitem {VariaveisPID}, \hyperpage{31}
+  \item {KIpitch}
+    \subitem {NovoDrone.ino}, \hyperpage{37}
+  \item {kp}
+    \subitem {VariaveisPID}, \hyperpage{32}
+  \item {KPpitch}
+    \subitem {NovoDrone.ino}, \hyperpage{37}
+
+  \indexspace
+
+  \item {leitura}
+    \subitem {Drone}, \hyperpage{13}
+    \subitem {Inercial}, \hyperpage{17}
+    \subitem {Voltimetro}, \hyperpage{33}
+  \item {LIGA}
+    \subitem {NovoDrone.ino}, \hyperpage{37}
+  \item {ligar}
+    \subitem {Drone}, \hyperpage{13}
+    \subitem {Motor}, \hyperpage{20}
+  \item {loop}
+    \subitem {4SetupLoop.ino}, \hyperpage{36}
+
+  \indexspace
+
+  \item {minimo}
+    \subitem {Motor}, \hyperpage{21}
+  \item {Motor}, \hyperpage{19}
+    \subitem {desligar}, \hyperpage{20}
+    \subitem {girar}, \hyperpage{20}
+    \subitem {ligar}, \hyperpage{20}
+    \subitem {minimo}, \hyperpage{21}
+    \subitem {Motor}, \hyperpage{19}
+    \subitem {Registro}, \hyperpage{21}
+    \subitem {setMinimo}, \hyperpage{21}
+    \subitem {velocidade}, \hyperpage{21}
+  \item {motor}
+    \subitem {Drone}, \hyperpage{14}
+
+  \indexspace
+
+  \item {NovoDrone.ino}, \hyperpage{36}
+    \subitem {imprimeSensor}, \hyperpage{36}
+    \subitem {KDpitch}, \hyperpage{37}
+    \subitem {KIpitch}, \hyperpage{37}
+    \subitem {KPpitch}, \hyperpage{37}
+    \subitem {LIGA}, \hyperpage{37}
+    \subitem {outputLIMIT}, \hyperpage{37}
+    \subitem {QUANT\_MOTOR}, \hyperpage{37}
+    \subitem {RODA}, \hyperpage{38}
+    \subitem {serial}, \hyperpage{38}
+    \subitem {VOO}, \hyperpage{38}
+
+  \indexspace
+
+  \item {outputLIMIT}
+    \subitem {NovoDrone.ino}, \hyperpage{37}
+
+  \indexspace
+
+  \item {PassaBaixa}, \hyperpage{22}
+    \subitem {amostragem}, \hyperpage{24}
+    \subitem {calculaConstante}, \hyperpage{23}
+    \subitem {constante}, \hyperpage{24}
+    \subitem {entrar}, \hyperpage{23}
+    \subitem {freqCorte}, \hyperpage{24}
+    \subitem {PassaBaixa}, \hyperpage{22}
+    \subitem {saida}, \hyperpage{25}
+    \subitem {saidaAnt}, \hyperpage{25}
+    \subitem {sair}, \hyperpage{23}
+    \subitem {setAmostragem}, \hyperpage{23}
+    \subitem {setFrequencia}, \hyperpage{24}
+  \item {pidPitch}
+    \subitem {Drone}, \hyperpage{14}
+  \item {pitch}
+    \subitem {Inercial}, \hyperpage{18}
+    \subitem {Registro}, \hyperpage{29}
+  \item {porta}
+    \subitem {Voltimetro}, \hyperpage{34}
+  \item {pousar}
+    \subitem {Drone}, \hyperpage{13}
+  \item {print}
+    \subitem {ControleSerial}, \hyperpage{8}
+    \subitem {Registro}, \hyperpage{27}
+  \item {printAngulo}
+    \subitem {Registro}, \hyperpage{27}
+  \item {println}
+    \subitem {ControleSerial}, \hyperpage{9}
+  \item {printPID}
+    \subitem {Registro}, \hyperpage{27}
+  \item {printTensao}
+    \subitem {Registro}, \hyperpage{27}
+  \item {printVelocidade}
+    \subitem {Registro}, \hyperpage{27}
+
+  \indexspace
+
+  \item {QUANT\_MOTOR}
+    \subitem {NovoDrone.ino}, \hyperpage{37}
+
+  \indexspace
+
+  \item {Registro}, \hyperpage{25}
+    \subitem {controle}, \hyperpage{28}
+    \subitem {imprimeAngulo}, \hyperpage{29}
+    \subitem {imprimePID}, \hyperpage{29}
+    \subitem {imprimeVelocidade}, \hyperpage{29}
+    \subitem {Inercial}, \hyperpage{17}
+    \subitem {Motor}, \hyperpage{21}
+    \subitem {pitch}, \hyperpage{29}
+    \subitem {print}, \hyperpage{27}
+    \subitem {printAngulo}, \hyperpage{27}
+    \subitem {printPID}, \hyperpage{27}
+    \subitem {printTensao}, \hyperpage{27}
+    \subitem {printVelocidade}, \hyperpage{27}
+    \subitem {Registro}, \hyperpage{26}
+    \subitem {roll}, \hyperpage{29}
+    \subitem {setAngulo}, \hyperpage{27}
+    \subitem {setTensao}, \hyperpage{28}
+    \subitem {setVelocidade}, \hyperpage{28}
+    \subitem {tensao}, \hyperpage{29}
+    \subitem {vel0}, \hyperpage{30}
+    \subitem {vel1}, \hyperpage{30}
+    \subitem {vel2}, \hyperpage{30}
+    \subitem {vel3}, \hyperpage{30}
+    \subitem {Voltimetro}, \hyperpage{34}
+    \subitem {yaw}, \hyperpage{30}
+  \item {registro}
+    \subitem {Drone}, \hyperpage{14}
+  \item {RODA}
+    \subitem {NovoDrone.ino}, \hyperpage{38}
+  \item {roll}
+    \subitem {Inercial}, \hyperpage{18}
+    \subitem {Registro}, \hyperpage{29}
+
+  \indexspace
+
+  \item {saida}
+    \subitem {PassaBaixa}, \hyperpage{25}
+    \subitem {VariaveisPID}, \hyperpage{32}
+  \item {saidaAnt}
+    \subitem {PassaBaixa}, \hyperpage{25}
+  \item {sair}
+    \subitem {PassaBaixa}, \hyperpage{23}
+  \item {serial}
+    \subitem {NovoDrone.ino}, \hyperpage{38}
+  \item {serial2}
+    \subitem {ControleSerial}, \hyperpage{10}
+  \item {setAmostragem}
+    \subitem {PassaBaixa}, \hyperpage{23}
+  \item {setAngulo}
+    \subitem {Registro}, \hyperpage{27}
+  \item {setFrequencia}
+    \subitem {PassaBaixa}, \hyperpage{24}
+  \item {setMinimo}
+    \subitem {Motor}, \hyperpage{21}
+  \item {setMotor}
+    \subitem {Drone}, \hyperpage{13}
+  \item {setPoint}
+    \subitem {VariaveisPID}, \hyperpage{32}
+  \item {setPorta}
+    \subitem {Voltimetro}, \hyperpage{33}
+  \item {setSerial}
+    \subitem {ControleSerial}, \hyperpage{9}
+  \item {setTensao}
+    \subitem {Registro}, \hyperpage{28}
+  \item {setup}
+    \subitem {4SetupLoop.ino}, \hyperpage{36}
+  \item {setVelocidade}
+    \subitem {Registro}, \hyperpage{28}
+
+  \indexspace
+
+  \item {tensao}
+    \subitem {Registro}, \hyperpage{29}
+    \subitem {Voltimetro}, \hyperpage{34}
+
+  \indexspace
+
+  \item {usando}
+    \subitem {ControleSerial}, \hyperpage{10}
+
+  \indexspace
+
+  \item {VariaveisPID}, \hyperpage{31}
+    \subitem {entrada}, \hyperpage{31}
+    \subitem {kd}, \hyperpage{31}
+    \subitem {ki}, \hyperpage{31}
+    \subitem {kp}, \hyperpage{32}
+    \subitem {saida}, \hyperpage{32}
+    \subitem {setPoint}, \hyperpage{32}
+  \item {varPIDPitch}
+    \subitem {Drone}, \hyperpage{14}
+  \item {vel0}
+    \subitem {Registro}, \hyperpage{30}
+  \item {vel1}
+    \subitem {Registro}, \hyperpage{30}
+  \item {vel2}
+    \subitem {Registro}, \hyperpage{30}
+  \item {vel3}
+    \subitem {Registro}, \hyperpage{30}
+  \item {velocidade}
+    \subitem {Motor}, \hyperpage{21}
+  \item {Voltimetro}, \hyperpage{32}
+    \subitem {leitura}, \hyperpage{33}
+    \subitem {porta}, \hyperpage{34}
+    \subitem {Registro}, \hyperpage{34}
+    \subitem {setPorta}, \hyperpage{33}
+    \subitem {tensao}, \hyperpage{34}
+    \subitem {Voltimetro}, \hyperpage{33}
+  \item {voltimetro}
+    \subitem {Drone}, \hyperpage{14}
+  \item {VOO}
+    \subitem {NovoDrone.ino}, \hyperpage{38}
+
+  \indexspace
+
+  \item {yaw}
+    \subitem {Inercial}, \hyperpage{18}
+    \subitem {Registro}, \hyperpage{30}
+
+\end{theindex}
