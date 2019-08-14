@@ -12,6 +12,12 @@ class Motor : Servo
 			minimo = 0;
 		}
 
+		/// <summary> Define a porta do motor </summary>
+		void setPorta(int porta)
+		{
+			attach(porta);
+		}
+
 		/// <summary> Define a velocidade do motor </summary>
 		/// <remarks> Elton, 14/08/2019. </remarks>
 		/// <param name="diferenca">Quanto acima do mínimo para girar o motor deverá girar</param>
@@ -59,6 +65,7 @@ class Motor : Servo
 
 	protected:
 		friend class Registro;
+		friend class Drone;
 
 		int minimo, /// <value> A velocidade mínima para rotação do motor </value>
 			velocidade; /// <value> A velocidade atual do motor </value>
@@ -192,6 +199,7 @@ class Inercial : MPU6050
 
 	protected:
 		friend class Registro;
+		friend class Drone;
 
 		float roll, /// <value> Último valor lido e filtrado no eixo roll. </value> 
 			  pitch, /// <value> Último valor lido e filtrado no eixo roll. </value> 
@@ -233,6 +241,7 @@ class Voltimetro
 
 	protected:
 		friend class Registro;
+		friend class Drone;
 
 		int porta; /// <value> Porta de leitura. </value>
 		float tensao; /// <value> Último valor de tensão lido. </value>
@@ -383,7 +392,7 @@ class Registro
 		/// <param name="vel1">	Ponteiro para a variável que contém a leitura do motor 1. </param>
 		/// <param name="vel2">	Ponteiro para a variável que contém a leitura do motor 2. </param>
 		/// <param name="vel3">	Ponteiro para a variável que contém a leitura do motor 3. </param>
-		void setVelocidade(float *vel0, float *vel1, float *vel2, float *vel3)
+		void setVelocidade(int *vel0, int *vel1, int *vel2, int *vel3)
 		{
 			this->vel0 = vel0;
 			this->vel1 = vel1;
@@ -421,8 +430,8 @@ class Registro
 		float *tensao, /// <value> Ponteiro para o endereço da variável com o valor de tensão. </value>
 			*roll, /// <value> Ponteiro para o endereço da variável com o valor de inclinação no eixo roll. </value>
 			*pitch, /// <value>	Ponteiro para o endereço da variável com o valor de inclinação no eixo pitch. </value>
-			*yaw, /// <value> Ponteiro para o endereço da variável com o valor de inclinação no eixo yaw. </value>
-			*vel0, /// <value> Ponteiro para o endereço da variável com a velocidade do motor 0. </value>
+			*yaw; /// <value> Ponteiro para o endereço da variável com o valor de inclinação no eixo yaw. </value>
+		int	*vel0, /// <value> Ponteiro para o endereço da variável com a velocidade do motor 0. </value>
 			*vel1, /// <value> Ponteiro para o endereço da variável com a velocidade do motor 1. </value>
 			*vel2, /// <value> Ponteiro para o endereço da variável com a velocidade do motor 2. </value>
 			*vel3; /// <value> Ponteiro para o endereço da variável com a velocidade do motor 3. </value>
@@ -499,8 +508,14 @@ struct VariaveisPID
 class Drone
 {
 	public:
-		Drone() : pidPitch(&varPIDPitch.entrada, &varPIDPitch.saida, &varPIDPitch.setPoint, 0.0, 0.0, 0.0, DIRECT), inercial(Wire), registro(&controle)
+		Drone() : 
+				 pidPitch(&varPIDPitch.entrada, &varPIDPitch.saida, &varPIDPitch.setPoint, 0.0, 0.0, 0.0, DIRECT), 
+				 inercial(Wire), 
+				 registro(&controle)
 		{
+			registro.setAngulo(&inercial.roll, &inercial.pitch, &inercial.yaw);
+			registro.setTensao(&voltimetro.tensao);
+			registro.setVelocidade(&motor[0].velocidade, &motor[1].velocidade, &motor[2].velocidade, &motor[3].velocidade);
 		}
 
 		/// <summary> Define a porta do motor. </summary>
@@ -509,7 +524,7 @@ class Drone
 		/// <param name="porta">  Porta desejada. </param>
 		void setMotor(int indice, int porta)
 		{
-			//motor[indice].attach(porta);
+			motor[indice].setPorta(porta);
 		}
 
 		/// <summary> Define o ângulo para o eixo pitch. </summary>
